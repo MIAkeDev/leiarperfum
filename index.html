@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence | Perfumería de Lujo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-circle">
+                     <img src="img/leairlogos.png" alt="LEIAR" class="logo-img">
+                </div>
+                <h1>PERFUM</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#perfumes">Perfumes</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="whatsapp-icon">
+                    <a href="https://wa.me/920632668?text=Hola%20Estoy%20interesado%20en%20sus%20perfumes" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Encuentra tu fragancia perfecta</h2>
+                    <p>Descubre nuestra exclusiva colección de perfumes de diseñador, fragancias nicho y árabes.</p>
+                    <a href="#perfumes" class="btn">Explorar colección</a>
+                </div>
+                <div class="hero-image">
+                     <div class="perfume-bottle"></div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Sección de Filtros -->
+    <section class="filters-section">
+        <div class="container">
+            <h3>Filtrar por:</h3>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="hombre">Hombre</button>
+                <button class="filter-btn" data-filter="mujer">Mujer</button>
+                <button class="filter-btn" data-filter="unisex">Unisex</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+            </div>
+            <div class="sort">
+                <label for="sort">Ordenar por:</label>
+                <select id="sort">
+                    <option value="popular">Más populares</option>
+                    <option value="price-asc">Precio: menor a mayor</option>
+                    <option value="price-desc">Precio: mayor a menor</option>
+                    <option value="name">Nombre A-Z</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Perfumes -->
+    <section id="perfumes" class="perfumes-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Colección</h2>
+            <div class="perfumes-grid">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Categorías -->
+    <section id="categorias" class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Categorías</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mars"></i>
+                    </div>
+                    <h3>Perfumes para Hombre</h3>
+                    <p>Fragancias masculinas intensas y sofisticadas.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                    <h3>Perfumes para Mujer</h3>
+                    <p>Esencias femeninas delicadas y cautivadoras.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-neuter"></i>
+                    </div>
+                    <h3>Fragancias Unisex</h3>
+                    <p>Perfumes versátiles para todos los gustos.</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Colección Premium</h3>
+                    <p>Ediciones limitadas y fragancias exclusivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Sobre Leiar</h2>
+                <p>En Essence nos dedicamos a ofrecer las fragancias más exclusivas y de la más alta calidad. Con más de 20 años de experiencia en el mundo de la perfumería, seleccionamos cuidadosamente cada aroma para asegurar una experiencia olfativa única.</p>
+                <p>Nuestro equipo de expertos perfumistas trabaja con las mejores materias primas y las técnicas más refinadas para crear y curar una colección que satisface los gustos más exigentes.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Fragancias únicas</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Perfumes de Diseñador</p>
+                    </div>
+                    <div class="stat">
+                        <h3>20+</h3>
+                        <p>Perfumes Árabes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-frame elegant-frame">
+                    <img src="img/leairlogos.png" alt="Sobre Leiar Perfumería" class="about-img">
+                    <div class="frame-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <img src="img/leairlogos.png" alt="LEIAR" class="logo-img">
+                    </div>
+                    <h2>ESSENCE</h2>
+                    <p>Tu destino para fragancias excepcionales</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#perfumes">Perfumes</a></li>
+                        <li><a href="#categorias">Categorías</a></li>
+                        <li><a href="#nosotros">Sobre nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Perfume 123, Madrid</p>
+                    <p><i class="fas fa-phone"></i> +34 912 345 678</p>
+                    <p><i class="fas fa-envelope"></i> info@essence.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir novedades y ofertas exclusivas</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Essence Perfumería. Todos los derechos reservados.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para detalles del producto -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-content">
+                <!-- Contenido del modal se cargará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
