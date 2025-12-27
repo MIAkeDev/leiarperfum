@@ -470,3 +470,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// Añade esto a tu script.js
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+
+function rotateCarousel() {
+    if (slides.length > 0) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+}
+
+// Inicia el carrusel si existe
+if (slides.length > 0) {
+    setInterval(rotateCarousel, 3000); // Cambia cada 3 segundos
+}
