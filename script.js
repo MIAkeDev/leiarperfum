@@ -2,7 +2,7 @@
 const perfumes = [
     {
         id: 1,
-        name: "Midnight Noir",
+        name: "Khamrah Lattafa",
         category: "hombre",
         price: 89.99,
         description: "Una fragancia intensa y misteriosa con notas de sándalo y pachulí.",
