@@ -497,7 +497,7 @@ const perfumes = [
     {
         id: 42,
         name: "Donna Born In Roma Intense",
-        category: "Premium",
+        category: "premium",
         price: 534,
         description: "Desde el inicio, la vainilla Bourbon y el ámbar envuelven la piel en una dulzura profunda y adictiva.",
         color: "#f9f9f9ff",
@@ -509,7 +509,7 @@ const perfumes = [
     {
         id: 43,
         name: "Ladies Cloud",
-        category: "Premium",
+        category: "premium",
         price: 270,
         description: "Fragancia gourmand dulce con notas florales y frutales",
         color: "#f9f9f9ff",
@@ -521,7 +521,7 @@ const perfumes = [
     {
         id: 44,
         name: "Thank u Next",
-        category: "Premium",
+        category: "premium",
         price: 270,
         description: "Ideal para los meses de primavera y verano",
         color: "#f9f9f9ff",
@@ -533,7 +533,7 @@ const perfumes = [
     {
         id: 45,
         name: "Good Girl",
-        category: "Premium",
+        category: "premium",
         price: 420,
         description: "El eau de parfum Carolina Herrera Good Girl resalta siempre tu lado femenino.",
         color: "#f9f9f9ff",
@@ -545,7 +545,7 @@ const perfumes = [
     {
         id: 46,
         name: "Good Girl Blush",
-        category: "Premium",
+        category: "premium",
         price: 499,
         description: "La composición aromática con notas de corazón florales",
         color: "#f9f9f9ff",
@@ -557,7 +557,7 @@ const perfumes = [
     {
         id: 47,
         name: "Very Good Girl",
-        category: "Premium",
+        category: "premium",
         price: 495,
         description: "Carolina Herrera es muy simbólico y representa la pasión, la sofisticación y la belleza.",
         color: "#f9f9f9ff",
@@ -569,7 +569,7 @@ const perfumes = [
     {
         id: 48,
         name: "Le beau le parfum",
-        category: "Premium",
+        category: "premium",
         price: 450,
         description: "sensual fragancia oriental amaderada",
         color: "#f9f9f9ff",
@@ -581,7 +581,7 @@ const perfumes = [
     {
         id: 49,
         name: "le male le parfum",
-        category: "Premium",
+        category: "premium",
         price: 434,
         description: "Una más en la colección de icónicas fragancias puramente masculinas",
         color: "#f9f9f9ff",
@@ -593,7 +593,7 @@ const perfumes = [
     {
         id: 50,
         name: "Le male elixir",
-        category: "Premium",
+        category: "premium",
         price: 445,
         description: "Le Male Elixir Absolu es una fragancia intensa y magnética",
         color: "#f9f9f9ff",
