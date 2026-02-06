@@ -282,7 +282,7 @@ const perfumes = [
         id: 24,
         name: "Odyssey aoud",
         category: "hombre",
-        price: 165,
+        price: 150,
         description: "El corazón de este perfume es una mezcla cálida de oud con notas de pachuli, almizcle y ambroxan. ",
         color: "#ffffffff",
         badge: "Edición Limitada",
@@ -294,7 +294,7 @@ const perfumes = [
         id: 25,
         name: "Odyssey aqua",
         category: "hombre",
-        price: 165,
+        price: 150,
         description: "Notas de Salida: Pomelo, Naranja, Artemisia.",
         color: "#1166b1ff",
         badge: "Edición Limitada",
@@ -306,7 +306,7 @@ const perfumes = [
         id: 26,
         name: "Odyssey Spectra",
         category: "hombre",
-        price: 165,
+        price: 150,
         description: "En el corazón, las notas de canela, lirio de los valles, flor de azahar del naranjo y lavanda aportan una mezcla floral y especiada que evoca elegancia y sofisticación.",
         color: "#f9f9f9ff",
         badge: "Edición Limitada",
@@ -354,7 +354,7 @@ const perfumes = [
         id: 30,
         name: "Amber Oud Gold",
         category: "hombre",
-        price: 230,
+        price: 250,
         description: "A medida que la fragancia se desarrolla, las notas de fondo revelan una rica mezcla de tonos amaderados",
         color: "#f9f9f9ff",
         badge: "Edición Limitada",
@@ -378,7 +378,7 @@ const perfumes = [
         id: 32,
         name: "Odyssey Mandarin Sky",
         category: "hombre",
-        price: 155,
+        price: 140,
         description: "Este perfume se encuentra inspirado en Jean Paul Gaultier Scandal Pour Homme",
         color: "#f9f9f9ff",
         badge: "Edición Limitada",
@@ -390,7 +390,7 @@ const perfumes = [
         id: 33,
         name: "Odyssey Mandarin Sky Elixir",
         category: "hombre",
-        price: 185,
+        price: 165,
         description: "Las notas de salida despliegan un cóctel cítrico luminoso de mandarina, naranja y bergamota",
         color: "#f9f9f9ff",
         badge: "Edición Limitada",
@@ -426,7 +426,7 @@ const perfumes = [
         id: 36,
         name: "Khamrah Lattafa",
         category: "hombre",
-        price: 150,
+        price: 140,
         description: "Su atención se centra en los sorprendentemente dulces acordes de dátil, que se entremezclan con un embriagador y endulzado iris, un embriagador nardo y suntuosos pralinés. ",
         color: "#1a1a2e",
         badge: "Mas vendido",
@@ -438,7 +438,7 @@ const perfumes = [
         id: 37,
         name: "Khamrah Qahwa",
         category: "hombre",
-        price: 150,
+        price: 140,
         description: "Una fragancia que redefine la experiencia del café en el mundo de la perfumería.",
         color: "#f9f9f9ff",
         badge: "Mas vendido",
@@ -997,5 +997,5 @@ function rotateCarousel() {
 
 // Inicia el carrusel si existe
 if (slides.length > 0) {
-    setInterval(rotateCarousel, 3000); // Cambia cada 3 segundos
+    setInterval(rotateCarousel, 1500); // Cambia cada 3 segundos
 }
