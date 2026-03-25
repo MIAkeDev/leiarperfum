@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leiar | Compras Variadas - EEUU</title>
+    <link rel="icon" type="image/png" href="img/leairlogos.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Ajustes específicos para esta página */
+        .hero-usa {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+        .hero-usa h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-usa p {
+            font-size: 18px;
+        }
+        .category-title {
+            text-align: center;
+            font-size: 32px;
+            margin: 50px 0 20px;
+            color: #333;
+            font-weight: 600;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header igual al original -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-circle">
+                     <img src="img/leairlogos.png" alt="LEIAR" class="logo-img">
+                </div>
+                <h1>LEIAR USA</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#crocs">Crocs</a></li>
+                    <li><a href="#iphones">iPhones</a></li>
+                    <li><a href="#relojes">Relojes</a></li>
+                    <li><a href="#carteras">Carteras</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="whatsapp-icon">
+                    <a href="https://wa.me/920632668?text=Hola%20Estoy%20interesado%20en%20productos%20de%20EEUU" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero EEUU -->
+    <section class="hero-usa">
+        <div class="container">
+            <h2>Bienvenido a Compras Variadas 🌎</h2>
+            <p>Productos exclusivos importados desde Estados Unidos</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CROCS -->
+    <div class="container" id="crocs">
+        <h2 class="category-title">Crocs</h2>
+        <div class="product-grid" id="crocs-grid"></div>
+    </div>
+
+    <!-- SECCIÓN iPHONES -->
+    <div class="container" id="iphones">
+        <h2 class="category-title">iPhones</h2>
+        <div class="product-grid" id="iphones-grid"></div>
+    </div>
+
+    <!-- SECCIÓN RELOJES -->
+    <div class="container" id="relojes">
+        <h2 class="category-title">Relojes</h2>
+        <div class="product-grid" id="relojes-grid"></div>
+    </div>
+
+    <!-- SECCIÓN CARTERAS -->
+    <div class="container" id="carteras">
+        <h2 class="category-title">Carteras</h2>
+        <div class="product-grid" id="carteras-grid"></div>
+    </div>
+
+    <!-- Footer igual al original -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle">
+                        <img src="img/leairlogos.png" alt="LEIAR" class="logo-img">
+                    </div>
+                    <h2>LEIAR USA</h2>
+                    <p>Productos importados de calidad</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#crocs">Crocs</a></li>
+                        <li><a href="#iphones">iPhones</a></li>
+                        <li><a href="#relojes">Relojes</a></li>
+                        <li><a href="#carteras">Carteras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Envíos desde EEUU</p>
+                    <p><i class="fas fa-phone"></i> 920 632 668</p>
+                    <p><i class="fas fa-envelope"></i> leiarperf@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Leiar USA. Todos los derechos reservados.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/leiar.pf"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@leiar.pf"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="usa.js"></script>
+</body>
+</html>

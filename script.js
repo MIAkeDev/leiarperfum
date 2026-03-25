@@ -2420,7 +2420,7 @@ const perfumes = [
         badge: "Tamaño Grande",
         popularity: 99,
         details: "El clásico aroma cítrico y ahumado de abedul de Armaf, ahora en una presentación de 200ml para que nunca te falte.",
-        image: "cdnintense200.png"
+        image: "clubman.png"
     },
     {
         id: 202,
