@@ -73,7 +73,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Lattafa Yara Moi brilla con notas de salida de durazno y jazmín, envueltas en un corazón de caramelo y sándalo.",
-        image: "yaramoi.png"
+        image: "moi.png"
     },
     {
         id: 7,
@@ -133,7 +133,7 @@ const perfumes = [
         badge: "",
         popularity: 84,
         details: "Una fragancia súper fresca, azul y acuática ideal para días soleados y climas calurosos.",
-        image: "odysseyaqua.png"
+        image: "aqua.png"
     },
     {
         id: 12,
@@ -676,7 +676,7 @@ const perfumes = [
         badge: "Más vendido",
         popularity: 100,
         details: "El ícono mundial de Armaf. Se destaca por una salida fuerte cítrica, desarrollándose hacia un secado de abedul ahumado muy masculino.",
-        image: "cdnintense.png"
+        image: "clubman.png"
     },
     {
         id: 57,
@@ -808,7 +808,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 88,
         details: "Una fragancia que captura la esencia de la vida moderna y lujosa en Dubái, con toques minerales y maderas exquisitas.",
-        image: "aquadubai.png"
+        image: "dubai.png"
     },
     {
         id: 68,
@@ -1277,7 +1277,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 88,
         details: "Un deleite olfativo que da agua la boca. Rico en acordes dulces, cremosos y de frutos secos lactónicos.",
-        image: "romeyumyum.png"
+        image: "yum.png"
     },
     {
         id: 107,
@@ -1668,7 +1668,7 @@ const perfumes = [
         id: 139,
         name: "Bharara King 100ML",
         category: "hombre",
-        price: 279,
+        price: 199,
         description: "Rey de los cumplidos, dulce y frutal",
         color: "#f1c40f",
         badge: "Top Ventas",
@@ -2167,7 +2167,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Opal ofrece una experiencia olfativa delicada y atalcada, mezclando florales sutiles y maderas blancas reconfortantes.",
-        image: "gameofspadesopal.png"
+        image: "opal.png"
     },
     {
         id: 181,
@@ -2516,7 +2516,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 97,
         details: "Representa el hombre moderno. Es afrutada, herbal y maderada en su base; perfecta para cualquier clima u ocasión.",
-        image: "yslyedp.png"
+        image: "yveslaurentedp.png"
     },
     {
         id: 210,
@@ -2732,7 +2732,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 98,
         details: "El gourmand por excelencia de Armani. Un aroma a caramelo toffee y especias cálidas que derrite en climas fríos.",
-        image: "strongerintensely.png"
+        image: "emporiointensely.png"
     },
     {
         id: 228,
@@ -2888,7 +2888,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 97,
         details: "Posiblemente uno de los mejores perfumes de invierno de diseñador de la historia. Especiado, rico, acogedor y nuclear.",
-        image: "spicebombextreme.png"
+        image: "spicebomextreme.png"
     },
 
     
@@ -2926,7 +2926,7 @@ const perfumes = [
         badge: "Más vendido",
         popularity: 97,
         details: "Una bocanada de aire del mar profundo. Limpio, acuático y energizante, perfecto para clima cálido y ropa casual.",
-        image: "adgprofondo.png"
+        image: "gioprofondoedp.png"
     },
     {
         id: 244,
@@ -3142,7 +3142,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 100,
         details: "El titán actual de la perfumería masculina. Ofrece frescura incisiva envuelta en un toque de vainilla misteriosa de Papúa Nueva Guinea.",
-        image: "sauvageedp.png"
+        image: "DIOREDP.png"
     },
     {
         id: 262,
@@ -3154,7 +3154,7 @@ const perfumes = [
         badge: "Extremo",
         popularity: 98,
         details: "Una concentración bestial y súper exclusiva. Se aleja del frescor para brindar una lavanda especiada cálida que dura eternidades.",
-        image: "sauvageelixir60.png"
+        image: "diorelixir.png"
     },
     {
         id: 263,
@@ -3190,7 +3190,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 96,
         details: "El potente Elixir en formato grande de 100ml. Su precio refleja su altísima concentración de aceites y especias de lujo.",
-        image: "sauvageelixir100.png"
+        image: "diorelixir.png"
     },
     {
         id: 266,
@@ -3346,7 +3346,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 99,
         details: "La joya de la corona nicho para climas templados. Sumamente elegante, dulce y especiada, cautivando cualquier olfato.",
-        image: "layton.png"
+        image: "marlylaton.png"
     },
     {
         id: 279,
