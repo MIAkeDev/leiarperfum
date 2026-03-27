@@ -1352,7 +1352,6 @@ footer {
     object-fit: contain;
     filter: drop-shadow(20px 20px 40px rgba(0,0,0,0.2));
 }
-
 /* ========== BUSCADOR EN TIEMPO REAL ========== */
 
 .search-container {
@@ -1426,45 +1425,12 @@ footer {
     font-weight: 600;
 }
 
-/* Animación para cuando se muestran resultados */
-.perfume-card {
-    animation: fadeInUp 0.4s ease forwards;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Destacar texto buscado (opcional) */
+/* Destacar texto buscado */
 .search-highlight {
     background-color: rgba(212, 175, 122, 0.3);
     padding: 0 2px;
     border-radius: 3px;
     font-weight: 600;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .search-container {
-        max-width: 100%;
-    }
-    
-    .search-input {
-        font-size: 14px;
-        padding: 10px 35px 10px 40px;
-    }
-    
-    .search-icon {
-        font-size: 14px;
-        left: 12px;
-    }
 }
 
 /* Mensaje cuando no hay resultados */
@@ -1490,4 +1456,21 @@ footer {
 .no-results p {
     color: var(--text-light);
     margin-bottom: 25px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-container {
+        max-width: 100%;
+    }
+    
+    .search-input {
+        font-size: 14px;
+        padding: 10px 35px 10px 40px;
+    }
+    
+    .search-icon {
+        font-size: 14px;
+        left: 12px;
+    }
 }

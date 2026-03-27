@@ -3412,29 +3412,46 @@ const perfumes = [
 
 ];
 
-// Variables globales
+// ========== VARIABLES GLOBALES ==========
 let cart = [];
 let currentFilter = "all";
 let currentSort = "popular";
-let currentSearch ="";
+let currentSearch = "";
 
-// Inicializar la aplicación
+// ========== INICIALIZACIÓN ==========
 document.addEventListener('DOMContentLoaded', function() {
     renderPerfumes();
     setupEventListeners();
-    updateCartCount();
+    initCarousel(); // Carrusel inicializado correctamente
 });
 
-// Renderizar los perfumes en la página
+// ========== RENDERIZAR PERFUMES ==========
 function renderPerfumes() {
     const container = document.querySelector('.perfumes-grid');
     if (!container) return;
     
-    // Filtrar y ordenar los perfumes
+    // Filtrar, ordenar y buscar
     let filteredPerfumes = searchPerfumes(perfumes, currentSearch);
     filteredPerfumes = filterPerfumes(filteredPerfumes, currentFilter);
+    filteredPerfumes = sortPerfumes(filteredPerfumes, currentSort);
     
-    // Generar HTML para cada perfume
+    // Actualizar contador
+    updateSearchResultsCount(filteredPerfumes.length);
+    
+    // Mensaje si no hay resultados
+    if (filteredPerfumes.length === 0 && currentSearch) {
+        container.innerHTML = `
+            <div class="no-results">
+                <i class="fas fa-search fa-3x"></i>
+                <h3>No encontramos resultados para "${currentSearch}"</h3>
+                <p>Prueba con otras palabras o revisa la ortografía</p>
+                <button class="btn" onclick="clearSearchAndRender()">Limpiar búsqueda</button>
+            </div>
+        `;
+        return;
+    }
+    
+    // Generar HTML
     const perfumesHTML = filteredPerfumes.map(perfume => `
         <div class="perfume-card" data-category="${perfume.category}">
             <div class="perfume-image">
@@ -3446,9 +3463,9 @@ function renderPerfumes() {
             </div>
             <div class="perfume-info">
                 <p class="perfume-category">${getCategoryName(perfume.category)}</p>
-                <h3 class="perfume-name">${perfume.name}</h3>
-                <p class="perfume-description">${perfume.description}</p>
-                <div class="perfume-price">S/${perfume.price.toFixed(2)}</div>
+                <h3 class="perfume-name">${highlightText(perfume.name, currentSearch)}</h3>
+                <p class="perfume-description">${highlightText(perfume.description, currentSearch)}</p>
+                <div class="perfume-price">S/.${perfume.price.toFixed(2)}</div>
                 <div class="perfume-actions">
                     <button class="whatsapp-btn" data-id="${perfume.id}">Consultar por WhatsApp</button>
                     <button class="view-details" data-id="${perfume.id}">Ver detalles</button>
@@ -3458,28 +3475,48 @@ function renderPerfumes() {
     `).join('');
     
     container.innerHTML = perfumesHTML;
-    
-    // Añadir event listeners a los botones recién creados
     addProductEventListeners();
 }
-updateSearchResultsCount(filteredPerfumes.length);
-// Filtrar perfumes por categoría
+
+// ========== FUNCIONES DE BÚSQUEDA ==========
+function searchPerfumes(perfumesList, searchTerm) {
+    if (!searchTerm.trim()) return perfumesList;
+    
+    const term = searchTerm.toLowerCase().trim();
+    
+    return perfumesList.filter(perfume => {
+        return perfume.name.toLowerCase().includes(term) ||
+               perfume.description.toLowerCase().includes(term) ||
+               getCategoryName(perfume.category).toLowerCase().includes(term) ||
+               (perfume.badge && perfume.badge.toLowerCase().includes(term));
+    });
+}
+
+function highlightText(text, searchTerm) {
+    if (!searchTerm || !text) return text;
+    const regex = new RegExp(`(${searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    return text.replace(regex, '<span class="search-highlight">$1</span>');
+}
+
+function clearSearchAndRender() {
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.value = '';
+        currentSearch = '';
+        const clearBtn = document.getElementById('clear-search');
+        if (clearBtn) clearBtn.style.display = 'none';
+        renderPerfumes();
+        searchInput.focus();
+    }
+}
+
+// ========== FUNCIONES DE FILTRO ==========
 function filterPerfumes(perfumesList, filter) {
     if (filter === "all") return perfumesList;
     return perfumesList.filter(perfume => perfume.category === filter);
 }
-// Actualizar contador de resultados de búsqueda
-function updateSearchResultsCount(count) {
-    const resultsCountDiv = document.getElementById('search-results-count');
-    if (resultsCountDiv) {
-        if (currentSearch) {
-            resultsCountDiv.innerHTML = `🔍 Se encontraron <strong>${count}</strong> resultado${count !== 1 ? 's' : ''} para "<strong>${currentSearch}</strong>"`;
-        } else {
-            resultsCountDiv.innerHTML = `📦 Mostrando <strong>${count}</strong> perfume${count !== 1 ? 's' : ''}`;
-        }
-    }
-}
-// Ordenar perfumes
+
+// ========== FUNCIONES DE ORDENAMIENTO ==========
 function sortPerfumes(perfumesList, sortType) {
     const sorted = [...perfumesList];
     
@@ -3496,7 +3533,7 @@ function sortPerfumes(perfumesList, sortType) {
     }
 }
 
-// Obtener nombre de categoría para mostrar
+// ========== FUNCIONES AUXILIARES ==========
 function getCategoryName(category) {
     const categories = {
         "hombre": "Para Hombre",
@@ -3506,40 +3543,158 @@ function getCategoryName(category) {
     };
     return categories[category] || category;
 }
-// Función para enviar mensaje a WhatsApp
+
+function updateSearchResultsCount(count) {
+    const resultsCountDiv = document.getElementById('search-results-count');
+    if (resultsCountDiv) {
+        if (currentSearch) {
+            resultsCountDiv.innerHTML = `🔍 Se encontraron <strong>${count}</strong> resultado${count !== 1 ? 's' : ''} para "<strong>${currentSearch}</strong>"`;
+        } else {
+            resultsCountDiv.innerHTML = `📦 Mostrando <strong>${count}</strong> perfume${count !== 1 ? 's' : ''}`;
+        }
+    }
+}
+
+// ========== WHATSAPP ==========
 function sendWhatsAppMessage(productId) {
     const product = perfumes.find(p => p.id === productId);
     if (!product) return;
     
-    // Mensaje personalizado
     const message = `Hola, estoy interesado en el perfume:\n\n` +
                    `*${product.name}*\n` +
                    `Categoría: ${getCategoryName(product.category)}\n` +
                    `Precio: S/.${product.price.toFixed(2)}\n\n` +
                    `Me podrían dar más información, por favor.`;
     
-    // Codificar el mensaje para URL
     const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = '920632668';
     
-    // Tu número de WhatsApp (cámbialo por el tuyo)
-    const phoneNumber = '920632668'; // Reemplaza con tu número
-    
-    // Abrir WhatsApp
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
 }
-// Configurar event listeners
+
+function consultWhatsApp(productId) {
+    const product = perfumes.find(p => p.id === productId);
+    if (!product) return;
+    
+    const button = document.querySelector(`.whatsapp-btn[data-id="${productId}"]`);
+    if (button) {
+        const originalText = button.textContent;
+        button.textContent = "✓ Redirigiendo...";
+        button.style.backgroundColor = "#1da851";
+        
+        setTimeout(() => {
+            button.textContent = originalText;
+            button.style.backgroundColor = "#25D366";
+        }, 1500);
+    }
+    
+    const message = `¡Hola! 👋\n\n` +
+                   `Estoy interesado en el perfume:\n` +
+                   `*${product.name}*\n\n` +
+                   `📋 *Detalles:*\n` +
+                   `• Categoría: ${getCategoryName(product.category)}\n` +
+                   `• Precio: S/.${product.price.toFixed(2)}\n` +
+                   `• Descripción: ${product.description}\n\n` +
+                   `¿Podrían darme más información sobre disponibilidad, formas de pago y envío?\n\n` +
+                   `¡Gracias!`;
+    
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = '920632668';
+    
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+    showNotification(`Redirigiendo a WhatsApp para consultar sobre ${product.name}`);
+}
+
+// ========== MODAL ==========
+function showProductDetails(productId) {
+    const product = perfumes.find(p => p.id === productId);
+    if (!product) return;
+    
+    const modalContent = document.querySelector('.modal-content');
+    const modalOverlay = document.querySelector('.modal-overlay');
+    
+    modalContent.innerHTML = `
+        <div class="modal-product">
+            <div class="modal-product-image" style="background-color: ${product.color};">
+                ${product.image ? 
+                    `<img src="img/${product.image}" alt="${product.name}" class="modal-real-image">` : 
+                    `<div class="modal-bottle" style="background-color: ${product.color};"></div>`
+                }
+                ${product.badge ? `<span class="modal-badge">${product.badge}</span>` : ''}
+            </div>
+            <div class="modal-product-info">
+                <p class="modal-category">${getCategoryName(product.category)}</p>
+                <h2 class="modal-name">${product.name}</h2>
+                <p class="modal-description">${product.details}</p>
+                <div class="modal-price">S/.${product.price.toFixed(2)}</div>
+                <div class="modal-stats">
+                    <div class="modal-stat">
+                        <span class="stat-label">Popularidad:</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill" style="width: ${product.popularity}%"></div>
+                        </div>
+                        <span class="stat-value">${product.popularity}%</span>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="modal-whatsapp-btn" data-id="${product.id}">Consultar por WhatsApp</button>
+                    <button class="modal-close-btn">Seguir explorando</button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    const modalWhatsappBtn = modalContent.querySelector('.modal-whatsapp-btn');
+    if (modalWhatsappBtn) {
+        modalWhatsappBtn.addEventListener('click', function() {
+            sendWhatsAppMessage(productId);
+            modalOverlay.classList.remove('active');
+        });
+    }
+    
+    const modalCloseBtn = modalContent.querySelector('.modal-close-btn');
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', function() {
+            modalOverlay.classList.remove('active');
+        });
+    }
+    
+    modalOverlay.classList.add('active');
+}
+
+// ========== CARRUSEL ==========
+function initCarousel() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+    
+    if (slides.length > 0) {
+        // Asegurar que solo la primera slide esté activa
+        slides.forEach((slide, index) => {
+            if (index === 0) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+        
+        // Rotar cada 2.3 segundos
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 2300);
+    }
+}
+
+// ========== EVENT LISTENERS ==========
 function setupEventListeners() {
     // Filtros
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remover clase active de todos los botones
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Añadir clase active al botón clickeado
             this.classList.add('active');
-            // Actualizar filtro actual
             currentFilter = this.dataset.filter;
-            // Renderizar perfumes con nuevo filtro
             renderPerfumes();
         });
     });
@@ -3563,7 +3718,7 @@ function setupEventListeners() {
         });
     }
     
-    // Cerrar menú al hacer clic en un enlace (móvil)
+    // Cerrar menú móvil
     const navLinks = document.querySelectorAll('nav ul li a');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -3572,19 +3727,6 @@ function setupEventListeners() {
             }
         });
     });
-    
-    // Newsletter form
-    const newsletterForm = document.getElementById('newsletter-form');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            
-            // Aquí normalmente enviaríamos el email a un servidor
-            alert(`¡Gracias por suscribirte con el email: ${email}! Te enviaremos nuestras novedades pronto.`);
-            this.reset();
-        });
-    }
     
     // Cerrar modal
     const modalClose = document.querySelector('.modal-close');
@@ -3596,7 +3738,6 @@ function setupEventListeners() {
         });
     }
     
-    // Cerrar modal al hacer clic fuera
     if (modalOverlay) {
         modalOverlay.addEventListener('click', function(e) {
             if (e.target === this) {
@@ -3605,50 +3746,44 @@ function setupEventListeners() {
         });
     }
     
-        // BUSCADOR EN TIEMPO REAL
+    // Buscador
     const searchInput = document.getElementById('search-input');
     const clearSearchBtn = document.getElementById('clear-search');
 
     if (searchInput) {
         searchInput.addEventListener('input', function(e) {
             currentSearch = e.target.value;
-        
-        // Mostrar/ocultar botón de limpiar
             if (clearSearchBtn) {
                 clearSearchBtn.style.display = currentSearch ? 'flex' : 'none';
             }
-        
-        // Renderizar con nueva búsqueda
             renderPerfumes();
-         });
-    }
-
-    // Botón para limpiar búsqueda
-    if (clearSearchBtn) {
-        clearSearchBtn.addEventListener('click', function() {
-            searchInput.value = '';
-            currentSearch = '';
-            clearSearchBtn.style.display = 'none';
-            renderPerfumes();
-            searchInput.focus();
         });
     }
-    
+
+    if (clearSearchBtn) {
+        clearSearchBtn.addEventListener('click', function() {
+            if (searchInput) {
+                searchInput.value = '';
+                currentSearch = '';
+                clearSearchBtn.style.display = 'none';
+                renderPerfumes();
+                searchInput.focus();
+            }
+        });
+    }
 }
 
-// Añadir event listeners a los botones de producto
 function addProductEventListeners() {
-    // Botones "Añadir al carrito"
-// Botones "Añadir al carrito" → "Consultar por WhatsApp"
+    // Botones WhatsApp
     const whatsappButtons = document.querySelectorAll('.whatsapp-btn');
     whatsappButtons.forEach(button => {
         button.addEventListener('click', function() {
             const productId = parseInt(this.dataset.id);
             sendWhatsAppMessage(productId);
+        });
     });
-});
     
-    // Botones "Ver detalles"
+    // Botones Ver detalles
     const viewDetailsButtons = document.querySelectorAll('.view-details');
     viewDetailsButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -3658,119 +3793,8 @@ function addProductEventListeners() {
     });
 }
 
-
-
-// Mostrar detalles del producto en modal
-function showProductDetails(productId) {
-    const product = perfumes.find(p => p.id === productId);
-    if (!product) return;
-    
-    const modalContent = document.querySelector('.modal-content');
-    const modalOverlay = document.querySelector('.modal-overlay');
-    
-    modalContent.innerHTML = `
-        <div class="modal-product">
-            <div class="modal-product-image" style="background-color: ${product.color};">
-                ${product.image ? 
-                    `<img src="img/${product.image}" alt="${product.name}" class="modal-real-image">` : 
-                    `<div class="modal-bottle" style="background-color: ${product.color};"></div>`
-                }
-                ${product.badge ? `<span class="modal-badge">${product.badge}</span>` : ''}
-            </div>
-            <div class="modal-product-info">
-                <p class="modal-category">${getCategoryName(product.category)}</p>
-                <h2 class="modal-name">${product.name}</h2>
-                <p class="modal-description">${product.details}</p>
-                <div class="modal-price">S/${product.price.toFixed(2)}</div>
-                <div class="modal-stats">
-                    <div class="modal-stat">
-                        <span class="stat-label">Popularidad:</span>
-                        <div class="stat-bar">
-                            <div class="stat-fill" style="width: ${product.popularity}%"></div>
-                        </div>
-                        <span class="stat-value">${product.popularity}%</span>
-                    </div>
-                </div>
-                <div class="modal-actions">
-                    <button class="modal-whatsapp-btn" data-id="${product.id}">Consultar por WhatsApp</button>
-                    <button class="modal-close-btn">Seguir explorando</button>
-                </div>
-            </div>
-        </div>
-    `;
-    const modalWhatsappBtn = modalContent.querySelector('.modal-whatsapp-btn');
-    if (modalWhatsappBtn) {
-        modalWhatsappBtn.addEventListener('click', function() {
-            sendWhatsAppMessage(productId);
-            modalOverlay.classList.remove('active');
-        });
-    }
-    
-    // Mostrar modal
-    modalOverlay.classList.add('active');
-    
-    // Añadir event listener al botón del modal
-    
-    
-    // Añadir event listener al botón cerrar del modal
-    const modalCloseBtn = modalContent.querySelector('.modal-close-btn');
-    if (modalCloseBtn) {
-        modalCloseBtn.addEventListener('click', function() {
-            modalOverlay.classList.remove('active');
-        });
-    }
-}
-
-// ... (aquí van todas tus otras funciones como renderPerfumes, filterPerfumes, etc.)
-
-// Función para consultar por WhatsApp
-function consultWhatsApp(productId) {
-    const product = perfumes.find(p => p.id === productId);
-    if (!product) return;
-    
-    // Mostrar feedback al usuario (opcional)
-    const button = document.querySelector(`.whatsapp-btn[data-id="${productId}"]`);
-    if (button) {
-        const originalText = button.textContent;
-        button.textContent = "✓ Redirigiendo...";
-        button.style.backgroundColor = "#1da851";
-        
-        setTimeout(() => {
-            button.textContent = originalText;
-            button.style.backgroundColor = "#25D366";
-        }, 1500);
-    }
-    
-    // Crear mensaje personalizado
-    const message = `¡Hola! 👋\n\n` +
-                   `Estoy interesado en el perfume:\n` +
-                   `*${product.name}*\n\n` +
-                   `📋 *Detalles:*\n` +
-                   `• Categoría: ${getCategoryName(product.category)}\n` +
-                   `• Precio: S/.${product.price.toFixed(2)}\n` +
-                   `• Descripción: ${product.description}\n\n` +
-                   `¿Podrían darme más información sobre disponibilidad, formas de pago y envío?\n\n` +
-                   `¡Gracias!`;
-    
-    // Codificar el mensaje para URL
-    const encodedMessage = encodeURIComponent(message);
-    
-    // TU NÚMERO DE WHATSAPP - REEMPLAZA ESTO
-    const phoneNumber = '920632668'; // Ejemplo: 51987654321
-    
-    // Abrir WhatsApp en nueva pestaña
-    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
-    
-    // Mostrar notificación
-    showNotification(`Redirigiendo a WhatsApp para consultar sobre ${product.name}`);
-}
-
-// ... (después pueden venir funciones como showNotification, etc.)
-
-
-// Mostrar notificación
+// ========== NOTIFICACIONES ==========
 function showNotification(message) {
-    // Crear elemento de notificación
     const notification = document.createElement('div');
     notification.className = 'notification';
     notification.textContent = message;
@@ -3788,7 +3812,6 @@ function showNotification(message) {
         animation-fill-mode: forwards;
     `;
     
-    // Añadir estilos de animación
     const style = document.createElement('style');
     style.textContent = `
         @keyframes slideIn {
@@ -3801,10 +3824,8 @@ function showNotification(message) {
         }
     `;
     document.head.appendChild(style);
-    
     document.body.appendChild(notification);
     
-    // Eliminar notificación después de 3 segundos
     setTimeout(() => {
         if (notification.parentNode) {
             notification.parentNode.removeChild(notification);
@@ -3812,14 +3833,12 @@ function showNotification(message) {
     }, 3000);
 }
 
-// Smooth scroll para enlaces internos
+// ========== SMOOTH SCROLL ==========
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             window.scrollTo({
@@ -3829,34 +3848,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-// Añade esto a tu script.js
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-slide');
-
-function rotateCarousel() {
-    if (slides.length > 0) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
-}
-
-// Inicia el carrusel si existe
-if (slides.length > 0) {
-    setInterval(rotateCarousel, 2300); // Cambia cada 3 segundos
-}
-
-// Filtrar perfumes por texto de búsqueda
-function searchPerfumes(perfumesList, searchTerm) {
-    if (!searchTerm.trim()) return perfumesList;
-    
-    const term = searchTerm.toLowerCase().trim();
-    
-    return perfumesList.filter(perfume => {
-        // Busca en nombre, descripción y categoría
-        return perfume.name.toLowerCase().includes(term) ||
-               perfume.description.toLowerCase().includes(term) ||
-               getCategoryName(perfume.category).toLowerCase().includes(term) ||
-               (perfume.badge && perfume.badge.toLowerCase().includes(term));
-    });
-}
