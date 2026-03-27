@@ -343,7 +343,7 @@ const perfumes = [
         id: 29,
         name: "Hawas Ice 100ML",
         category: "hombre",
-        price: 139,
+        price: 149,
         description: "Versión extra fría y revitalizante",
         color: "#48dbfb",
         badge: "Tendencia",
@@ -688,7 +688,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 96,
         details: "Una fusión magistral de especias frescas, ambroxan y un fondo dulce y atrayente que genera muchísimos cumplidos.",
-        image: "cdnurbanelixir.png"
+        image: "clubnuitmanelixir.png"
     },
     {
         id: 58,
@@ -1157,7 +1157,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 96,
         details: "De Afnan. Una auténtica bestia en proyección. Abre con notas afrutadas muy jugosas y oscuras que secan en un musgo de roble terroso y masculino.",
-        image: "supremacynoi.png"
+        image: "supremacyonlyintense.png"
     },
     {
         id: 97,
@@ -2852,7 +2852,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 96,
         details: "Un monstruo en proyección. Completamente distinto al original, siendo extremadamente dulce, oscuro e ideal para salir de fiesta.",
-        image: "invictusvictoryelixir.png"
+        image: "invictuselixir.png"
     },
     {
         id: 238,
@@ -3014,9 +3014,9 @@ const perfumes = [
     },
     {
         id: 251,
-        name: "Carolina Herrera 212 Men NYC EDT 100ML",
-        category: "hombre",
-        price: 259,
+        name: "Carolina Herrera 212 heroes Forever Young EDP 80ML",
+        category: "mujer",
+        price: 330,
         description: "Verde, cítrico y almizcle floral",
         color: "#95a5a6",
         badge: "Clásico",
@@ -3106,7 +3106,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Versión fresca y dorada de la línea The One. Mantiene la seducción pero agrega cítricos muy potentes y terrosos.",
-        image: "theonegold.png"
+        image: "gabanaoneedp.png"
     },
     {
         id: 259,
@@ -3416,6 +3416,7 @@ const perfumes = [
 let cart = [];
 let currentFilter = "all";
 let currentSort = "popular";
+let currentSearch ="";
 
 // Inicializar la aplicación
 document.addEventListener('DOMContentLoaded', function() {
@@ -3430,8 +3431,8 @@ function renderPerfumes() {
     if (!container) return;
     
     // Filtrar y ordenar los perfumes
-    let filteredPerfumes = filterPerfumes(perfumes, currentFilter);
-    filteredPerfumes = sortPerfumes(filteredPerfumes, currentSort);
+    let filteredPerfumes = searchPerfumes(perfumes, currentSearch);
+    filteredPerfumes = filterPerfumes(filteredPerfumes, currentFilter);
     
     // Generar HTML para cada perfume
     const perfumesHTML = filteredPerfumes.map(perfume => `
@@ -3461,13 +3462,23 @@ function renderPerfumes() {
     // Añadir event listeners a los botones recién creados
     addProductEventListeners();
 }
-
+updateSearchResultsCount(filteredPerfumes.length);
 // Filtrar perfumes por categoría
 function filterPerfumes(perfumesList, filter) {
     if (filter === "all") return perfumesList;
     return perfumesList.filter(perfume => perfume.category === filter);
 }
-
+// Actualizar contador de resultados de búsqueda
+function updateSearchResultsCount(count) {
+    const resultsCountDiv = document.getElementById('search-results-count');
+    if (resultsCountDiv) {
+        if (currentSearch) {
+            resultsCountDiv.innerHTML = `🔍 Se encontraron <strong>${count}</strong> resultado${count !== 1 ? 's' : ''} para "<strong>${currentSearch}</strong>"`;
+        } else {
+            resultsCountDiv.innerHTML = `📦 Mostrando <strong>${count}</strong> perfume${count !== 1 ? 's' : ''}`;
+        }
+    }
+}
 // Ordenar perfumes
 function sortPerfumes(perfumesList, sortType) {
     const sorted = [...perfumesList];
@@ -3594,7 +3605,34 @@ function setupEventListeners() {
         });
     }
     
-    
+        // BUSCADOR EN TIEMPO REAL
+    const searchInput = document.getElementById('search-input');
+    const clearSearchBtn = document.getElementById('clear-search');
+
+    if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+            currentSearch = e.target.value;
+        
+        // Mostrar/ocultar botón de limpiar
+            if (clearSearchBtn) {
+                clearSearchBtn.style.display = currentSearch ? 'flex' : 'none';
+            }
+        
+        // Renderizar con nueva búsqueda
+            renderPerfumes();
+         });
+    }
+
+    // Botón para limpiar búsqueda
+    if (clearSearchBtn) {
+        clearSearchBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            currentSearch = '';
+            clearSearchBtn.style.display = 'none';
+            renderPerfumes();
+            searchInput.focus();
+        });
+    }
     
 }
 
@@ -3806,4 +3844,19 @@ function rotateCarousel() {
 // Inicia el carrusel si existe
 if (slides.length > 0) {
     setInterval(rotateCarousel, 2300); // Cambia cada 3 segundos
+}
+
+// Filtrar perfumes por texto de búsqueda
+function searchPerfumes(perfumesList, searchTerm) {
+    if (!searchTerm.trim()) return perfumesList;
+    
+    const term = searchTerm.toLowerCase().trim();
+    
+    return perfumesList.filter(perfume => {
+        // Busca en nombre, descripción y categoría
+        return perfume.name.toLowerCase().includes(term) ||
+               perfume.description.toLowerCase().includes(term) ||
+               getCategoryName(perfume.category).toLowerCase().includes(term) ||
+               (perfume.badge && perfume.badge.toLowerCase().includes(term));
+    });
 }

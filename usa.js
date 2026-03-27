@@ -7,7 +7,7 @@ const crocs = [
         category: "Crocs",
         price: 49.99,
         description: "Cómodos y ligeros, ideales para cualquier ocasión.",
-        image: "img/crocs-classic.jpg",
+        image: "img/croc.png",
         badge: "Top ventas"
     },
     {
@@ -16,7 +16,7 @@ const crocs = [
         category: "Crocs",
         price: 69.99,
         description: "Diseño deportivo con máxima comodidad.",
-        image: "img/crocs-pacer.jpg",
+        image: "img/crocsli.png",
         badge: "Nuevo"
     },
     {
@@ -85,7 +85,7 @@ const relojes = [
         category: "Relojes",
         price: 89.99,
         description: "Estilo clásico automático.",
-        image: "img/invicta.jpg",
+        image: "img/invicta.png",
         badge: ""
     }
 ];
