@@ -157,7 +157,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Fragancia intensa con perfil nocturno, combinando especias oscuras y maderas nobles, ideal para eventos de noche.",
-        image: "OdysseyHommeBlack100.png"
+        image: "OdysseyHommeBlack.png"
     },
     {
         id: 14,
@@ -1241,7 +1241,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Evoca las costas mediterráneas con una salida cítrica brillante y un secado aromático, clásico y muy masculino.",
-        image: "RomepourHomme.png"
+        image: "Romepour.png"
     },
     {
         id: 104,
@@ -2251,7 +2251,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 89,
         details: "El premio mayor para quienes aman los perfumes llamativos. Dulce intenso con frutas tropicales y un secado cálido.",
-        image: "GameOfSpadesJackpot.png"
+        image: "GameOfSpadeJackpot.png"
     },
     {
         id: 188,
@@ -2986,7 +2986,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Inspirada en las carreras de veleros, ofrece una limpieza inigualable, fría, aromática y muy pulcra para uso diario.",
-        image: "Prada Luna Rossa EDT 100ML.png"
+        image: "Prada Luna Rossa Carbon EDT 100ML.png"
     },
     {
         id: 249,
