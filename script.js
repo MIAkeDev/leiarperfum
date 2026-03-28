@@ -25,7 +25,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 90,
         details: "Variante de la línea Yara, enfocada en dulces azucarados, combinados con notas frutales rojas y una base de almizcle suave.",
-        image: "yaracandy.png"
+        image: "YaraCandy.png"
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const perfumes = [
         badge: "",
         popularity: 88,
         details: "Yara Tous se centra en las vibras veraniegas, con una salida prominente de mango, coco y maracuyá, sobre una base floral blanca reconfortante.",
-        image: "yaratous.png"
+        image: "YARA TOUS.png"
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 85,
         details: "Yara Elixir profundiza en las notas de la línea Yara con una concentración mayor, ofreciendo mayor longevidad y una estela más densa.",
-        image: "yaraelixir.png"
+        image: "YaraElixir.png"
     },
     {
         id: 5,
@@ -61,7 +61,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 92,
         details: "Una versión más rica y densa del clásico Asad, maximizando las notas especiadas, el ámbar y la vainilla oscura.",
-        image: "asadelixir.png"
+        image: "AsadElixir.png"
     },
     {
         id: 6,
@@ -97,7 +97,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Asad Bourbon toma la herencia de Asad y le añade un toque profundo, ahumado y licoroso que la hace irresistible.",
-        image: "asadbourbon.png"
+        image: "AsadBourbon100ML.png"
     },
     {
         id: 9,
@@ -109,7 +109,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 88,
         details: "Un flanker fresco de Asad, mezclando toques acuáticos y exóticos con la característica base profunda amaderada.",
-        image: "asadzanzibar.png"
+        image: "AsadZanzibar.png"
     },
     {
         id: 10,
@@ -157,7 +157,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Fragancia intensa con perfil nocturno, combinando especias oscuras y maderas nobles, ideal para eventos de noche.",
-        image: "odysseyblack.png"
+        image: "OdysseyHommeBlack100ML.png"
     },
     {
         id: 14,
@@ -193,7 +193,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 84,
         details: "Odyssey Aristo ofrece una longevidad excepcional con acordes lujosos y elegantes enfocados en el público adulto.",
-        image: "odysseyaristo.png"
+        image: "OdysseyAristo.png"
     },
     {
         id: 17,
@@ -217,7 +217,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Presenta una combinación de almizcles blancos y flores suaves, evocando una profunda sensación de limpieza y frescura.",
-        image: "odysseywhite.png"
+        image: "OdysseyHommeWhiteEdition.png"
     },
     {
         id: 19,
@@ -229,7 +229,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 92,
         details: "Irresistible fragancia de Armaf que destila un aroma goloso a toffee derretido sobre café espresso recién preparado.",
-        image: "toffeecoffee.png"
+        image: "OdysseyToffeeCoffee.png"
     },
     {
         id: 20,
@@ -253,7 +253,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Siente el verano con acordes prominentes de pulpa de mango tropical fresca, combinados con flores exóticas.",
-        image: "gomango.png"
+        image: "OdysseyGoMango100ML.png"
     },
     {
         id: 22,
@@ -265,7 +265,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Combina acordes oscuros de maderas nobles, vainilla ahumada y un toque vibrante frutal profundo en el secado.",
-        image: "blackforest.png"
+        image: "OdysseyBlackForest.png"
     },
     {
         id: 23,
@@ -277,7 +277,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Evoca las playas caribeñas con ricas notas frutales y un secado cálido almizclado perfecto para relajarse.",
-        image: "bahamas.png"
+        image: "OdysseyBaHaMas.png"
     },
     {
         id: 24,
@@ -301,7 +301,7 @@ const perfumes = [
         badge: "Exclusivo",
         popularity: 84,
         details: "Una edición vintage de Mandarin Sky que acentúa las maderas y aminora la dulzura, haciéndola más sofisticada.",
-        image: "mandarinskyvintage.png"
+        image: "MandarinSkyVintageEdition.png"
     },
     {
         id: 26,
@@ -349,7 +349,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 96,
         details: "Hawas Ice incorpora limón helado, anís estrellado y cardamomo frío, brindando muchísima frescura y estela brutal.",
-        image: "hawasice.png"
+        image: "Hawas Ice 100ML.png"
     },
     {
         id: 30,
@@ -361,7 +361,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 88,
         details: "Rasasi lleva el ADN de Hawas a un perfil puramente tropical, súper frutal y optimista, perfecto para la playa.",
-        image: "hawastropical.png"
+        image: "HawasTropical.png"
     },
     {
         id: 31,
@@ -373,7 +373,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Añade notas amaderadas y ahumadas profundas al dulzor del clásico Hawas, creando un aura elegante.",
-        image: "hawasblack.png"
+        image: "HawasBlack100ML.png"
     },
     {
         id: 32,
@@ -385,7 +385,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 86,
         details: "Inspirada en atardeceres de Malibú, es una fragancia con brisa oceánica y suaves cítricos resplandecientes.",
-        image: "hawasmalibu.png"
+        image: "HawasMalibu.png"
     },
     {
         id: 33,
@@ -397,7 +397,7 @@ const perfumes = [
         badge: "",
         popularity: 91,
         details: "Un perfume de Rasasi con salidas frutales de granada y un encantador corazón floral dulce.",
-        image: "hawasher.png"
+        image: "HawasForHer100ML.png"
     },
     {
         id: 34,
@@ -409,7 +409,7 @@ const perfumes = [
         badge: "",
         popularity: 84,
         details: "Una edición luminosa y alegre que resalta las notas de jazmín y frutas chispeantes.",
-        image: "hawaseclat.png"
+        image: "HAWASECLAT.png"
     },
     {
         id: 35,
@@ -421,7 +421,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 85,
         details: "Notas especiadas ardientes combinadas con resinas profundas, diseñada para dejar una huella imborrable.",
-        image: "hawasfire.png"
+        image: "Hawasfire.png"
     },
     {
         id: 36,
@@ -433,7 +433,7 @@ const perfumes = [
         badge: "",
         popularity: 90,
         details: "Hawas Elixir toma la base icónica de Rasasi y la concentra aún más, dándole una proyección sin precedentes.",
-        image: "hawaselixir.png"
+        image: "hAWAS ELIXIR.png"
     },
     {
         id: 37,
@@ -481,7 +481,7 @@ const perfumes = [
         badge: "",
         popularity: 92,
         details: "Fragancia azul y súper limpia, con toques de manzana verde y menta que energizan para el día a día.",
-        image: "afnan9amdive.png"
+        image: "Afnan9AMDive.png"
     },
 
 
@@ -496,7 +496,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 93,
         details: "Lattafa Bade'e Al Oud Sublime es una fragancia jugosa y afrutada, con vibrantes notas de manzana roja, lichi y un fondo suave de musgo y vainilla.",
-        image: "sublime.png"
+        image: "SUBLIME.png"
     },
     {
         id: 42,
@@ -508,7 +508,7 @@ const perfumes = [
         badge: "",
         popularity: 92,
         details: "Bade'e Al Oud Honor & Glory ofrece un corazón exótico de creme brulee, piña dulce asada y especias vibrantes que cautivan al instante.",
-        image: "honorglory.png"
+        image: "Honor&Glory.png"
     },
     {
         id: 43,
@@ -520,7 +520,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 89,
         details: "Con acordes de azafrán, nuez moscada y una rica madera de oud, es una de las referencias más lujosas e imponentes de la casa Lattafa.",
-        image: "oudforglory.png"
+        image: "OudForGlory100ML.png"
     },
     {
         id: 44,
@@ -532,7 +532,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Bade'e Al Oud Amethyst despliega flores exquisitas mezcladas con oud suave, vainilla dulce y toques de pimienta rosa.",
-        image: "amethyst.png"
+        image: "Amethyst.png"
     },
     {
         id: 45,
@@ -544,7 +544,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 84,
         details: "Una propuesta delicada y muy femenina de Lattafa, donde las flores suaves se entrelazan con un fondo atalcado y almizclado.",
-        image: "nobleblush.png"
+        image: "NobleBlush.png"
     },
     {
         id: 46,
@@ -556,7 +556,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 95,
         details: "Dumont Nitro Red es súper frutal y proyecta muchísimo. Destaca por su aroma a sandía dulce con un fondo masculino moderno.",
-        image: "nitrored.png"
+        image: "Nitro Red EDP 100ML.png"
     },
     {
         id: 47,
@@ -568,7 +568,7 @@ const perfumes = [
         badge: "",
         popularity: 88,
         details: "Un aroma limpio y luminoso de Dumont que resalta maderas blancas, almizcle y un sutil dulzor cremoso en su secado.",
-        image: "nitrowhite.png"
+        image: "NitroWhite.png"
     },
     {
         id: 48,
@@ -580,7 +580,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Una fragancia robusta y madura. Mezcla notas terrosas y metálicas con una base profunda y duradera ideal para la oficina.",
-        image: "nitroplatinum.png"
+        image: "NitroPlatinum.png"
     },
     {
         id: 49,
@@ -592,7 +592,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 90,
         details: "Famoso por su perfil oscuro y misterioso, recordando a fragancias nicho cítrico-ahumadas con un rendimiento arrollador.",
-        image: "nitroblack.png"
+        image: "NitroBlackIntense.png"
     },
     {
         id: 50,
@@ -604,7 +604,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Una fragancia todo terreno. Abre con cítricos jugosos y se asienta en un aroma amaderado limpio, perfecto para cualquier clima.",
-        image: "nitroblue.png"
+        image: "NitroBlue.png"
     },
     {
         id: 51,
@@ -628,7 +628,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Una composición sólida que equilibra maderas preciosas, especias suaves y un final almizclado ideal para uso diario.",
-        image: "nitropourhomme.png"
+        image: "NitroPourHomme.png"
     },
     {
         id: 53,
@@ -640,7 +640,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 91,
         details: "La versión Elixir lleva la línea Nitro a su máximo esplendor, con ingredientes altamente concentrados y resinas profundas.",
-        image: "nitroelixir.png"
+        image: "NitroElixir100ML.png"
     },
     {
         id: 54,
@@ -652,7 +652,7 @@ const perfumes = [
         badge: "Extremo",
         popularity: 94,
         details: "Redobla la apuesta del famoso Nitro Red. Más dulzor, más impacto frutal y una duración que supera las 12 horas en piel.",
-        image: "nitroredintensely.png"
+        image: "NitroRedIntensely100ML.png"
     },
     {
         id: 55,
@@ -664,7 +664,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 92,
         details: "Un clásico de Armaf, sumamente sofisticado y maduro. Muy apreciado por su elegancia floral y su secado de vainilla y almizcle.",
-        image: "cdnwoman.png"
+        image: "ClubdeNuitWoman.png"
     },
     {
         id: 56,
@@ -688,7 +688,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 96,
         details: "Una fusión magistral de especias frescas, ambroxan y un fondo dulce y atrayente que genera muchísimos cumplidos.",
-        image: "clubnuitmanelixir.png"
+        image: "Club de Nuit Urban Man Elixir 100ML.png"
     },
     {
         id: 58,
@@ -700,7 +700,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 94,
         details: "Fragancia azul ultra premium de Armaf. Cítricos vibrantes en la salida, acompañados de notas marinas, incienso y sándalo.",
-        image: "cdniconic.png"
+        image: "ClubdeNuitBlueIconic.png"
     },
     {
         id: 59,
@@ -712,7 +712,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 97,
         details: "Untold brilla con su perfil dulce y medicinal de azafrán, jazmín y maderas ambarinas. Un aura seductora e irresistible.",
-        image: "cdnuntold.png"
+        image: "Club de Nuit Untold 100ML.png"
     },
     {
         id: 60,
@@ -724,7 +724,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Con notas punzantes de bergamota, grosellas negras y rosa, Sillage ofrece una sensación de agua helada y lujo súper moderno.",
-        image: "cdnsillage.png"
+        image: "ClubdeNuitSillage.png"
     },
     {
         id: 61,
@@ -736,7 +736,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 87,
         details: "Una joya exclusiva. Notas de salida de pimienta rosa y lichi, finalizando con un cremoso praliné, sándalo y ambroxan.",
-        image: "cdnmaleka.png"
+        image: "Club eNuitMaleka.png"
     },
     {
         id: 62,
@@ -748,7 +748,7 @@ const perfumes = [
         badge: "Exclusivo",
         popularity: 88,
         details: "Versión extracto que rinde homenaje a los aromas clásicos de la línea, pero con ingredientes más ricos y una duración nuclear.",
-        image: "cdnprecieux.png"
+        image: "ClubdeNuitPrecieux.png"
     },
     {
         id: 63,
@@ -760,7 +760,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 91,
         details: "Armaf nos trae un oud muy amigable y dulce. Abre con notas frutales intensas (melocotón, pera) descansando sobre un oud cremoso.",
-        image: "cdnoud.png"
+        image: "ClubdeNuiOud05ml.png"
     },
     {
         id: 64,
@@ -772,7 +772,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 93,
         details: "Versión Intense del famoso L'Aventure. Su salida de elemí y limón es más rica y su secado amaderado proyecta por muchas horas.",
-        image: "laventureintense.png"
+        image: "AlHaramainL'AventureIntense100ML.png"
     },
     {
         id: 65,
@@ -784,7 +784,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Una fragancia refrescante perfecta para el día. Sus notas florales ligeras y maderas claras la hacen muy fácil de llevar.",
-        image: "laventureciel.png"
+        image: "AlHaramainL'AventureCiel.png"
     },
     {
         id: 66,
@@ -796,7 +796,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Destaca por sus notas sumamente frescas y verdes, combinando cítricos brillantes ideales para altas temperaturas.",
-        image: "laventurefraiche.png"
+        image: "AlHaramainL'AventureFraiche.png"
     },
     {
         id: 67,
@@ -820,7 +820,7 @@ const perfumes = [
         badge: "Más vendido",
         popularity: 98,
         details: "Una de las fragancias dulces más potentes del mercado. El melón, la piña y el almizcle dulce aseguran cumplidos y proyeccón en modo bestia.",
-        image: "amberoudgold.png"
+        image: "Amber Oud Gold Edition 120ml.png"
     },
     {
         id: 69,
@@ -832,7 +832,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 85,
         details: "Una versión más oscura, ambarina y profunda. Diseñada para climas fríos y eventos de gala con su rica base resinosa.",
-        image: "amberoudnight.png"
+        image: "AmberOudNightDubai.png"
     },
     {
         id: 70,
@@ -856,7 +856,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 91,
         details: "Destaca por sus lujosas notas de almendra amarga, azafrán, cedro y ámbar gris, dando como resultado un aura magnética.",
-        image: "amberoudrubi.png"
+        image: "AmberOudRubi100ML.png"
     },
     {
         id: 72,
@@ -868,7 +868,7 @@ const perfumes = [
         badge: "Exclusivo",
         popularity: 93,
         details: "Famoso por su increíble calidad. Un aroma dulce a algodón de azúcar especiado, súper refinado y con fijación extraordinaria.",
-        image: "amberoudrouge.png"
+        image: "AmberOudRouge100ML.png"
     },
     {
         id: 73,
@@ -880,7 +880,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 86,
         details: "Armaf Beach Party capta a la perfección un día bajo el sol: notas marinas saladas, cítricos relajantes y maderas flotantes.",
-        image: "beachparty.png"
+        image: "BeachParty.png"
     },
     {
         id: 74,
@@ -892,7 +892,7 @@ const perfumes = [
         badge: "Económico",
         popularity: 96,
         details: "Un clásico indiscutible. Hoja verde y manzana abren el paso a loto y mimosa. Perfecto para uso diario o el gimnasio por su extrema limpieza.",
-        image: "nauticavoyage.png"
+        image: "Nautica Voyage EDR 100ML.png"
     },
     {
         id: 75,
@@ -904,7 +904,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 92,
         details: "Una bomba oceánica y salada, con algas marinas y ambroxan. Destaca por su duración excepcional para ser un perfume fresco.",
-        image: "atlas.png"
+        image: "AtlasLattafa55ML.png"
     },
     {
         id: 76,
@@ -928,7 +928,7 @@ const perfumes = [
         badge: "",
         popularity: 84,
         details: "Una mezcla femenina y elegante que evoca jardines primaverales llenos de frescura y sutil dulzor.",
-        image: "arabiabeauty.png"
+        image: "ArabiaTheBeauty.png"
     },
     {
         id: 78,
@@ -964,7 +964,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Radiante y alegre, Bon Voyage mezcla cítricos vibrantes con notas florales de fondo, siendo excelente para cualquier aventura diaria.",
-        image: "arabiabonvoyage.png"
+        image: "ArabiaBonVoyage.png"
     },
     
     {
@@ -977,7 +977,7 @@ const perfumes = [
         badge: "Más vendido",
         popularity: 96,
         details: "Lattafa Qaed Al Fursan es famosa por su apertura extremadamente jugosa a base de piña asada, acompañada por notas de azafrán, jazmín y toques amaderados profundos.",
-        image: "qaedalfursan.png"
+        image: "Qaed Al Fursan 90ML.png"
     },
     {
         id: 82,
@@ -989,7 +989,7 @@ const perfumes = [
         badge: "",
         popularity: 88,
         details: "Una fragancia suave y láctica. Resalta notas reconfortantes de coco, vainilla y almizcle blanco, creando un aura limpia y elegante para el día a día.",
-        image: "qaedunlimited.png"
+        image: "QaedUnlimited.png"
     },
     {
         id: 83,
@@ -1001,7 +1001,7 @@ const perfumes = [
         badge: "Económico",
         popularity: 87,
         details: "Hayaati de Lattafa es una mezcla vibrante de manzana, bergamota, canela y almizcle. Ideal como fragancia firma por su gran versatilidad y rendimiento.",
-        image: "hayaati.png"
+        image: "Hayaati.png"
     },
     {
         id: 84,
@@ -1013,7 +1013,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Una explosión dulce que recuerda al algodón de azúcar caramelizado, mezclado con resinas y un fondo amaderado muy sensual.",
-        image: "ravenowrouge.png"
+        image: "RaveNoRouge.png"
     },
     {
         id: 85,
@@ -1049,7 +1049,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 93,
         details: "Una fragancia sumamente popular por su potente nota de piña dulce, complementada con abedul y pachulí. Proyección y estela increíbles.",
-        image: "ravenow.png"
+        image: "RaveNow100ML.png"
     },
     {
         id: 88,
@@ -1061,7 +1061,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "La contraparte femenina de Rave Now. Un aura muy coqueta y dulce con prominentes notas de frutas rojas y vainilla esponjosa.",
-        image: "nowwomen.png"
+        image: "NowWomen.png"
     },
     {
         id: 89,
@@ -1097,7 +1097,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 88,
         details: "Una fragancia imponente que proyecta poder y elegancia, combinando especias vibrantes, notas resinosas y madera noble.",
-        image: "thekingdom.png"
+        image: "TheKingdom.png"
     },
     {
         id: 92,
@@ -1109,7 +1109,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Maison Alhambra nos trae un aroma vibrante, dulce y tropical con acordes de mango maduro, cítricos picantes y notas verdes vibrantes.",
-        image: "sceptremalachite.png"
+        image: "SceptreMalachite.png"
     },
     {
         id: 93,
@@ -1121,7 +1121,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 89,
         details: "Fragancia gourmand exquisita que huele exactamente a un postre de merengue de limón, con crema de vainilla y toques horneados.",
-        image: "frenchavenuemeringue.png"
+        image: "FrenchAvenueMeringue100ML.png"
     },
     {
         id: 94,
@@ -1133,7 +1133,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 94,
         details: "French Avenue Liquid Brun es una composición seductora para el clima frío. Despliega ricas notas alicoradas, vainilla y especias exóticas cálidas.",
-        image: "liquidbrun.png"
+        image: "LiquidBrun100ML.png"
     },
     {
         id: 95,
@@ -1145,7 +1145,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Un acuático amaderado sumamente sofisticado y masculino, diseñado para dejar una estela de limpieza y profesionalismo.",
-        image: "frenchavenueazzure.png"
+        image: "FrenchAvenueAzzure.png"
     },
     {
         id: 96,
@@ -1157,7 +1157,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 96,
         details: "De Afnan. Una auténtica bestia en proyección. Abre con notas afrutadas muy jugosas y oscuras que secan en un musgo de roble terroso y masculino.",
-        image: "supremacyonlyintense.png"
+        image: "Supremacy Not Only Intense EDP 100ML.png"
     },
     {
         id: 97,
@@ -1169,7 +1169,7 @@ const perfumes = [
         badge: "Exclusivo",
         popularity: 89,
         details: "Edición especial que refina el ADN clásico de Supremacy, aportando mayor cremosidad, maderas suavizadas y una presentación de lujo.",
-        image: "supremacycollector.png"
+        image: "SupremacyCollector'sEdition.png"
     },
     {
         id: 98,
@@ -1181,7 +1181,7 @@ const perfumes = [
         badge: "Extremo",
         popularity: 92,
         details: "Presentación más grande y de mayor concentración del famoso NOI. Ideal para quienes exigen que el perfume dure más de 12 horas en piel.",
-        image: "supremacynoiextrait.png"
+        image: "SupremacyNotOnlyIntenseExtrait.png"
     },
     {
         id: 99,
@@ -1241,7 +1241,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Evoca las costas mediterráneas con una salida cítrica brillante y un secado aromático, clásico y muy masculino.",
-        image: "romepourhomme.png"
+        image: "RomepourHomme.png"
     },
     {
         id: 104,
@@ -1301,7 +1301,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 91,
         details: "El nuevo flanker de 9 PM. Añade un tono más atrevido y picante al clásico ADN nocturno, ideal para fiestas y vida nocturna.",
-        image: "9pmrebel.png"
+        image: "Afnan9PMRebel100ML.png"
     },
     {
         id: 109,
@@ -1313,7 +1313,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "De Afnan. Una propuesta electrizante que potencia las notas frescas y cítricas a un nivel superior, súper refrescante.",
-        image: "turathielectric.png"
+        image: "TurathiElectric.png"
     },
     {
         id: 110,
@@ -1325,7 +1325,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 94,
         details: "Lleva la dulzura de la manzana y la vainilla de 9 PM a una concentración Elixir densa, rica y con una proyección inmensa.",
-        image: "9pmelixir.png"
+        image: "Afnan9PMElixir 100ML.png"
     },
     {
         id: 111,
@@ -1361,7 +1361,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 89,
         details: "Conocido por su explosión frutal/cítrica y su tremenda longevidad en piel, un perfume que se hace notar fácilmente en la habitación.",
-        image: "bharararome.png"
+        image: "BhararaRomeExtradoose.png"
     },
     {
         id: 114,
@@ -1373,7 +1373,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 96,
         details: "Maison Alhambra Kismet Magic (Kismet Angel) es una fragancia gourmand embriagadora y cálida, famosa por ser un deleite perfecto para el frío.",
-        image: "kismetmagic.png"
+        image: "Kismet Magic 100ML.png"
     },
     {
         id: 115,
@@ -1409,7 +1409,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Lattafa Qimmah ofrece una combinación sumamente atractiva de café dulce y notas florales blancas, dando un aura sofisticada y cálida.",
-        image: "qimmahwomen.png"
+        image: "QimmahForWomen.png"
     },
     {
         id: 118,
@@ -1421,7 +1421,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 91,
         details: "Una de las presentaciones más hermosas de Lattafa. Su aroma es un viaje tropical, lujoso y cremoso que irradia pura elegancia fina.",
-        image: "musamamwhite.png"
+        image: "MusamamWhiteIntense100ML.png"
     },
     {
         id: 119,
@@ -1433,7 +1433,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 88,
         details: "Fragancia de perfil intensamente dulce, evocando dulces de pastelería con crema, azúcar caramelizada y destellos suaves de flores.",
-        image: "eclairaffair.png"
+        image: "EclairAffair.png"
     },
     {
         id: 120,
@@ -1445,7 +1445,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 89,
         details: "Parte de una deliciosa colección enfocada en los amantes de lo dulce. Huele a crema batida fresca y azucarada, perfecta para el uso diario.",
-        image: "whippedpleasure.png"
+        image: "GiveMeGourmandWhippedPleasure.png"
     },
     
     {
@@ -1458,7 +1458,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 88,
         details: "Una fragancia totalmente enfocada en las amantes de la vainilla. Ofrece una experiencia dulce, cálida y súper reconfortante como un postre recién horneado.",
-        image: "vanillafreak.png"
+        image: "GiveMeGourmandVanillaFreakv.png"
     },
     {
         id: 122,
@@ -1470,7 +1470,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Huele exactamente a una sobredosis de chocolate. Mezcla ricas notas de cacao amargo con crema y un fondo ligeramente atalcado.",
-        image: "chocooverdose.png"
+        image: "GiveMeGourmandChocoOverdose.png"
     },
     {
         id: 123,
@@ -1482,7 +1482,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Captura el aroma de los malvaviscos tostados. Súper dulce, aireada y perfecta para quienes aman destacar con un aura tierna.",
-        image: "mallowmadness.png"
+        image: "GiveMeGourmandMallowMadness.png"
     },
     {
         id: 124,
@@ -1494,7 +1494,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 87,
         details: "Una fragancia cálida que te envuelve en un aura que evoca galletas de mantequilla y chispas de chocolate fundidas.",
-        image: "cookiecrave.png"
+        image: "GiveMeGourmandCookieCrave.png"
     },
     {
         id: 125,
@@ -1542,7 +1542,7 @@ const perfumes = [
         badge: "Económico",
         popularity: 89,
         details: "Inspirada en las mejores fragancias nicho, ofrece una potente salida de cítricos y frutas dulces con una base de almizcle blanco muy duradera.",
-        image: "philospura.png"
+        image: "philos pura.png"
     },
     {
         id: 129,
@@ -1554,7 +1554,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Una propuesta cítrica y oceánica elegante de Maison Alhambra. Ideal para la oficina o el uso diario en climas cálidos.",
-        image: "jeanloweazure.png"
+        image: "JeanLoweAzure.png"
     },
     {
         id: 130,
@@ -1578,7 +1578,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 90,
         details: "Conocida por su frescura chispeante de jengibre y pomelo, que rápidamente evoluciona hacia un ámbar amaderado adictivo.",
-        image: "jeanloweinmortel.png"
+        image: "JeanLoweInmortel.png"
     },
     {
         id: 132,
@@ -1602,7 +1602,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Inspirada en perfiles súper exclusivos. Destaca una combinación lujosa de flores oscuras, pachulí y madera de agar cremosa.",
-        image: "jeanlowematiere.png"
+        image: "JeanLoweMatiere.png"
     },
     {
         id: 134,
@@ -1614,7 +1614,7 @@ const perfumes = [
         badge: "",
         popularity: 88,
         details: "La versión más fresca de la línea. Perfecta para el gimnasio o el calor extremo, destacando su extrema sensación de limpieza.",
-        image: "jeanlowefraiche.png"
+        image: "JeanLoweFraiche.png"
     },
     {
         id: 135,
@@ -1626,7 +1626,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 89,
         details: "Una creación majestuosa de Bharara. Potente, lujosa y especiada, diseñada para impresionar con su estela kilométrica.",
-        image: "pharaohramses2.png"
+        image: "PharaohRamsesII.png"
     },
     {
         id: 136,
@@ -1638,7 +1638,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Un perfume armonioso y versátil. Deja un aura afrutada muy sutil sobre una base de almizcle blanco impecable.",
-        image: "essencebharara.png"
+        image: "EssenceBharara.png"
     },
     {
         id: 137,
@@ -1662,7 +1662,7 @@ const perfumes = [
         badge: "",
         popularity: 88,
         details: "La fragancia azul por excelencia de Bharara. Salida explosiva de bergamota y limón, secando en maderas suaves y ambroxan.",
-        image: "bhararadoublebleu.png"
+        image: "BhararaDoubleBleu.png"
     },
     {
         id: 139,
@@ -1674,7 +1674,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 97,
         details: "Famoso por su inmensa duración y proyección. Huele a frutas dulces, vainilla y un toque atalcado que atrae todas las miradas.",
-        image: "bhararaking.png"
+        image: "BhararaKingarfum100ML.png"
     },
     {
         id: 140,
@@ -1686,7 +1686,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 92,
         details: "Toma el ADN exitoso de Bharara King y le añade un nivel extra de lujo con resinas doradas y maderas más pronunciadas.",
-        image: "bhararakinggold.png"
+        image: "BhararaKingGoldEdition.png"
     },
     {
         id: 141,
@@ -1698,7 +1698,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Una propuesta enigmática. Destaca por notas afrutadas densas que se mezclan con un ligero ahumado y maderas nobles.",
-        image: "bhararaonyx.png"
+        image: "BhararaOnyx.png"
     },
     {
         id: 142,
@@ -1722,7 +1722,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Una joya gourmand. Literalmente huele a barra de chocolate con leche y toques de vainilla cremosa que duran todo el día.",
-        image: "bhararachocolate.png"
+        image: "BhararaChocolate.png"
     },
     {
         id: 144,
@@ -1794,7 +1794,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 90,
         details: "Variante que introduce un rico y cremoso acorde de pistacho tostado, combinado con helado de vainilla y praliné.",
-        image: "eclairepistache.png"
+        image: "EclairePistache.png"
     },
     {
         id: 150,
@@ -1806,7 +1806,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 89,
         details: "Una salida frutal vibrante protagonizada por lichi jugoso y frambuesas, ideal para climas cálidos y días soleados.",
-        image: "mayar.png"
+        image: "Mayar.png"
     },
     {
         id: 151,
@@ -1818,7 +1818,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Una versión diferente del ADN Mayar. Más acuática, verde y exótica, con prominentes notas de higo fresco y sándalo.",
-        image: "mayarnatural.png"
+        image: "MayarNaturalIntense.png"
     },
     {
         id: 152,
@@ -1854,7 +1854,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Una bomba marina que, a pesar de ser fresca, cuenta con una duración abrumadora gracias a su alta concentración de aceites.",
-        image: "atlantisextrait.png"
+        image: "AtlantisExtrait.png"
     },
     {
         id: 155,
@@ -1878,7 +1878,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 91,
         details: "Clon muy famoso de Lattafa con un perfil floral masculino (nardos) combinado con maderas de cuero y ámbar salado.",
-        image: "fakharextraitgold.png"
+        image: "FakharExtraitGold100ML.png"
     },
     {
         id: 157,
@@ -1890,7 +1890,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 93,
         details: "El rey del día a día de Lattafa. Fresco, versátil y aromático, mezclando manzana, lavanda y un fondo de haba tonka.",
-        image: "fakharblack.png"
+        image: "FakharBlack100ML.png"
     },
     {
         id: 158,
@@ -1902,7 +1902,7 @@ const perfumes = [
         badge: "",
         popularity: 90,
         details: "Una fragancia sumamente femenina y radiante. Abre con un dulzor afrutado similar a la uva y se asienta en flores blancas bellísimas.",
-        image: "fakharrose.png"
+        image: "FakharRose.png"
     },
     {
         id: 159,
@@ -1914,7 +1914,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Afnan 9 AM es un perfume de día limpio, vibrante y muy pulcro, que te da un golpe de energía por la mañana.",
-        image: "afnan9am.png"
+        image: "9AMUnisex.png"
     },
     {
         id: 160,
@@ -1939,7 +1939,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Afnan adapta el éxito de 9 PM para el público femenino. Un aroma nocturno, floral y con toques deliciosos de frutos rojos y vainilla.",
-        image: "9pmpourfemme.png"
+        image: "9PMPourFemme.png"
     },
     {
         id: 162,
@@ -1951,7 +1951,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 92,
         details: "De Lattafa. Una fragancia nicho en toda regla. Famosa por su nota relajante de ciruela mezclada con palo santo, creando un aura elegante y reconfortante.",
-        image: "vintageradio.png"
+        image: "VintageRadio.png"
     },
     {
         id: 163,
@@ -1963,7 +1963,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 88,
         details: "Lattafa His Confession es una propuesta audaz, con un corazón rico en especias y un secado maderado denso para dejar una estela imponente.",
-        image: "hisconfession.png"
+        image: "HisConfession.png"
     },
     {
         id: 164,
@@ -1975,7 +1975,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 90,
         details: "Inspirada en fragancias nicho, Liam Grey destaca por su aroma cálido a té negro cardamomo e higo fresco. Sumamente acogedora y versátil.",
-        image: "liamgrey.png"
+        image: "LiamGrey.png"
     },
     {
         id: 165,
@@ -1987,7 +1987,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Una fragancia pulcra y vibrante. Salida marina y aromática que resulta excelente para el gimnasio o días de trabajo en la oficina.",
-        image: "liamblueshine.png"
+        image: "LiamBlueShine.png"
     },
     {
         id: 166,
@@ -1999,7 +1999,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 89,
         details: "Compañera de His Confession. Un perfume cautivador con acordes dulces, vainilla y un bouquet floral que derrocha feminidad y seguridad.",
-        image: "herconfession.png"
+        image: "HerConfession.png"
     },
     {
         id: 167,
@@ -2011,7 +2011,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 94,
         details: "Lattafa Maahir Legacy es un cóctel helado de menta, lima y lavanda. Tremendamente revitalizante e ideal para combatir el calor.",
-        image: "maahirlegacy.png"
+        image: "MaahirLegacy100ML.png"
     },
     {
         id: 168,
@@ -2047,7 +2047,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 86,
         details: "Una versión más intensa y concentrada de Najdia, famosa por su salida súper fresca que recuerda al olor del chicle o la manzana verde acuática.",
-        image: "najdiaintense.png"
+        image: "NajdiaIntense.png"
     },
     {
         id: 171,
@@ -2059,7 +2059,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 89,
         details: "Un lanzamiento que ha robado corazones. Aroma muy rico y licoroso a extracto de vainilla negra con un toque de almendra crujiente.",
-        image: "sehrlattafa.png"
+        image: "SehrLattafa.png"
     },
     {
         id: 172,
@@ -2083,7 +2083,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Una fragancia pasional y profunda, donde las rosas aterciopeladas se abrazan a especias y una base cálida muy adictiva.",
-        image: "venenoscarlet.png"
+        image: "VenenoScarlet.png"
     },
     {
         id: 174,
@@ -2119,7 +2119,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Maison Alhambra Glacier Le Noir es un aroma rico y cálido, que evoca elegancia nocturna mediante cardamomo y maderas cremosas.",
-        image: "glacierlenoir.png"
+        image: "GlacierLeNoir.png"
     },
     {
         id: 177,
@@ -2131,7 +2131,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 93,
         details: "Inspirada en el éxito nicho de coco y piña. Es una fragancia exquisita, juguetona y muy veraniega que atrae muchísimos cumplidos.",
-        image: "glacierbold.png"
+        image: "GlacierBold100ML.png"
     },
     {
         id: 178,
@@ -2143,7 +2143,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "La versión verde de la línea Glacier, aportando frescura mentolada y cítrica muy revitalizante para el día a día.",
-        image: "glacierpourhomme.png"
+        image: "GlacierPourHomme.png"
     },
     {
         id: 179,
@@ -2155,7 +2155,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 88,
         details: "Una línea exclusiva de lujo. Bonus destaca por ser sumamente vibrante y luminosa, perfecta para destacar con clase.",
-        image: "gameofspadesbonus.png"
+        image: "GameOfSpadesBonus.png"
     },
     {
         id: 180,
@@ -2179,7 +2179,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 91,
         details: "Fragancia de nivel extracto sumamente potente, con el famoso ADN del algodón de azúcar, azafrán amargo y maderas resinosas.",
-        image: "gameofspadesrouge.png"
+        image: "GameOfSpadesRougeExtrait.png"
     },
     {
         id: 182,
@@ -2203,7 +2203,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Se caracteriza por sus acordes herbales limpios y un toque de musgo blanco que proporciona una sensación de pureza absoluta.",
-        image: "gameofspadesemerald.png"
+        image: "GameOfSpadesEmerald.png"
     },
     {
         id: 184,
@@ -2239,7 +2239,7 @@ const perfumes = [
         badge: "Exclusivo",
         popularity: 87,
         details: "Transparente y lujosa. Diamond abre con cítricos punzantes y evoluciona a un corazón luminoso que dura largas horas.",
-        image: "gameofspadesdiamond.png"
+        image: "GameOfSpadesDiamond.png"
     },
     {
         id: 187,
@@ -2251,7 +2251,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 89,
         details: "El premio mayor para quienes aman los perfumes llamativos. Dulce intenso con frutas tropicales y un secado cálido.",
-        image: "gameofspadesjackpot.png"
+        image: "Game Of Spades Jackpot.png"
     },
     {
         id: 188,
@@ -2263,7 +2263,7 @@ const perfumes = [
         badge: "Extremo",
         popularity: 85,
         details: "Fiel a su nombre, esta fragancia posee una concentración altísima que fija el aroma amaderado en la ropa y piel por días.",
-        image: "gameofspadesnolimit.png"
+        image: "GameOfSpadesNoLimit.png"
     },
     {
         id: 189,
@@ -2335,7 +2335,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Una combinación rica y potente que no pasa desapercibida, hecha para acaparar la atención en habitaciones grandes.",
-        image: "gameofspadeshighroller.png"
+        image: "GameOfSpadesHighRoller.png"
     },
     {
         id: 195,
@@ -2347,7 +2347,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 89,
         details: "El máximo estandarte de la casa. Mezcla magistral de maderas preciosas, resinas, cuero y un dulce frutal abrumador.",
-        image: "gameofspadesking.png"
+        image: "GameOfSpadesKing.png"
     },
     {
         id: 196,
@@ -2383,7 +2383,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 86,
         details: "Aroma sumamente original que combina la dulce vainilla con un toque mineral, evocando dunas de arena tibia en una isla.",
-        image: "islandvanilladunes.png"
+        image: "IslandVanillaDunes.png"
     },
     {
         id: 199,
@@ -2407,7 +2407,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Armaf trae una fragancia juvenil y sumamente chic, mezclando notas de lichi, rosa turca y un fondo de vainilla y almizcle.",
-        image: "missarmafchic.png"
+        image: "MissArmahic.png"
     },
     
     {
@@ -2432,7 +2432,7 @@ const perfumes = [
         badge: "Tamaño Grande",
         popularity: 95,
         details: "Presentación de 150ml de la famosa fragancia avainillada y fiestera, ideal para uso constante.",
-        image: "afnan9pm150.png"
+        image: "Afnan 9 PM 150ML.png"
     },
     {
         id: 203,
@@ -2444,7 +2444,7 @@ const perfumes = [
         badge: "Tamaño Grande",
         popularity: 94,
         details: "Tremenda longevidad y estela en una botella imponente de 200ml para los verdaderos amantes de Bharara.",
-        image: "bhararaking200.png"
+        image: "BhararaKing200ML.png"
     },
     {
         id: 204,
@@ -2456,7 +2456,7 @@ const perfumes = [
         badge: "Set / Cofre",
         popularity: 92,
         details: "Incluye la fragancia principal junto con desodorante y gel de ducha para potenciar la duración del aroma.",
-        image: "set9pm.png"
+        image: "Set3PCSAfnan9PM.png"
     },
     {
         id: 205,
@@ -2468,7 +2468,7 @@ const perfumes = [
         badge: "Set / Cofre",
         popularity: 90,
         details: "El regalo perfecto para hombre. Contiene el perfume Asad de Lattafa acompañado de complementos aromáticos.",
-        image: "setasad.png"
+        image: "Set3PCSAsad.png"
     },
     {
         id: 206,
@@ -2480,7 +2480,7 @@ const perfumes = [
         badge: "Set / Cofre",
         popularity: 93,
         details: "Un hermoso set que incluye la fragancia Cloud de 100ml junto con crema corporal y un perfumero de viaje.",
-        image: "setcloud.png"
+        image: "SetArianaGrandeCloud3.png"
     },
     {
         id: 207,
@@ -2492,7 +2492,7 @@ const perfumes = [
         badge: "Set / Cofre",
         popularity: 88,
         details: "El icónico oso negro en un set espectacular que incluye la fragancia de 100ml y accesorios de la marca.",
-        image: "settoyboy.png"
+        image: "SetMoschinoToyBoy3PCS.png"
     },
     {
         id: 208,
@@ -2504,7 +2504,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 98,
         details: "Un perfume revolucionario que mezcla la lavanda francesa con la sensualidad de la flor de azahar marroquí.",
-        image: "ysllibre.png"
+        image: "Yves Saint Laurent Libre EDP 90ML.png"
     },
     {
         id: 209,
@@ -2528,7 +2528,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 90,
         details: "Una versión que reduce la dulzura de la manzana e incrementa las notas amaderadas y aromáticas, haciéndola más madura.",
-        image: "yslyintense.png"
+        image: "YvesSaintLaurentYEDPIntense.png"
     },
     {
         id: 211,
@@ -2540,7 +2540,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 94,
         details: "Una fragancia sumamente adictiva y ardiente. Su salida picante de jengibre se funde en un corazón de vainilla que dura horas.",
-        image: "azzaromostwantedparfum.png"
+        image: "AzzaroTheMostWantedParfum100ML.png"
     },
     {
         id: 212,
@@ -2552,7 +2552,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 91,
         details: "La versión Elixir ofrece un perfil olfativo profundo y goloso, ideal para llamar la atención en la vida nocturna.",
-        image: "azzaromostwantedelixir.png"
+        image: "AzzaroThEMostWantedElixir.png"
     },
     {
         id: 213,
@@ -2564,7 +2564,7 @@ const perfumes = [
         badge: "",
         popularity: 92,
         details: "Un clásico para fiestas. Frutal en su salida, secando en una base muy rica de tabaco, canela y cedro rojo.",
-        image: "azzarowantedbynight.png"
+        image: "AzzaroWantedByNightEDP.png"
     },
     {
         id: 214,
@@ -2576,7 +2576,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 93,
         details: "Un golpe dulce y aromático, súper juvenil y vibrante. Destaca por su corona en el frasco y su enorme estela dulce.",
-        image: "scandalpourhomme.png"
+        image: "JeanPaulGaultierScandalEDT100ML.png"
     },
     {
         id: 215,
@@ -2588,7 +2588,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Más denso y amaderado que el original. Pierde parte del dulzor caramelo para ganar un sándalo oscuro muy seductor.",
-        image: "scandalleparfum.png"
+        image: "ScandalLeparfum.png"
     },
     {
         id: 216,
@@ -2612,7 +2612,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 96,
         details: "La elegancia hecha perfume. El perfil marinero clásico elevado al lujo con especias cálidas y un fondo oriental.",
-        image: "lemaleleparfum.png"
+        image: "Jean Paul Gaultier Le Male Le Parfum 125ML.png"
     },
     {
         id: 218,
@@ -2624,7 +2624,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 94,
         details: "El verano en una botella. Es dulce pero fresco, con una nota de coco súper prominente ideal para la playa.",
-        image: "lebeauedt.png"
+        image: "JeanPaulGaultierLeMaleLeParfum125ML.png"
     },
     {
         id: 219,
@@ -2636,7 +2636,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 95,
         details: "Un lanzamiento súper codiciado. Añade una nota de higo muy natural al ADN de coco, dándole un toque tropical y herbal exquisito.",
-        image: "paradisegarden.png"
+        image: "Jean Paul Gaultier Paradise Garden 125ML.png"
     },
     {
         id: 220,
@@ -2648,7 +2648,7 @@ const perfumes = [
         badge: "Clásico",
         popularity: 95,
         details: "El Dios del Amor. Una bomba de fiesta y seducción que combina frescura extrema en la salida con un fondo de vainilla dulce y duradera.",
-        image: "eros.png"
+        image: "Versace Eros EDP 100ML.png"
     },
     {
         id: 221,
@@ -2660,7 +2660,7 @@ const perfumes = [
         badge: "",
         popularity: 92,
         details: "Versión cálida del Eros. Introduce mandarina italiana, pimienta negra y romero silvestre, creando un contraste ardiente y dulce.",
-        image: "erosflame.png"
+        image: "VersaceErosFlameEDP100ML.png"
     },
     {
         id: 222,
@@ -2672,7 +2672,7 @@ const perfumes = [
         badge: "Versátil",
         popularity: 94,
         details: "Una fragancia azul que funciona para todo. Fresca por los cítricos y notas marinas, pero con carácter gracias al papiro y el incienso.",
-        image: "dylanblue.png"
+        image: "VersaceDylanBlue100ML.png"
     },
     {
         id: 223,
@@ -2684,7 +2684,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Pura frescura para el calor extremo. Súper ligera, acuática y brillante, perfecta para días soleados.",
-        image: "eaufraiche.png"
+        image: "VersaceEauFraiche100ML.png"
     },
     {
         id: 224,
@@ -2696,7 +2696,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 97,
         details: "Un floriental moderno y alta costura. Resalta una salida afrutada y vibrante sobre una base amaderada de vainilla súper elegante.",
-        image: "borninromamujer.png"
+        image: "Valentino Donna Born in Roma EDP 100ML.png"
     },
     {
         id: 225,
@@ -2708,7 +2708,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 93,
         details: "Una celebración de la frescura urbana y la elegancia romana, con notas aromáticas ahumadas y toques minerales únicos.",
-        image: "borninromahombre.png"
+        image: "ValentinoUomoBorninRomaEDT100ML.png"
     },
     {
         id: 226,
@@ -2720,7 +2720,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 94,
         details: "Versión más oscura y densa, ideal para salidas nocturnas. La vainilla y el vetiver se roban el protagonismo.",
-        image: "borninromaintense.png"
+        image: "ValentinoBorninRomaIntenseUomo.png"
     },
     {
         id: 227,
@@ -2744,7 +2744,7 @@ const perfumes = [
         badge: "",
         popularity: 92,
         details: "La versión más madura y concentrada. Baja un poco el nivel de azúcar y sube la resina y maderas para una masculinidad seria.",
-        image: "strongerparfum.png"
+        image: "EmporioArmaniStrongerWithYouParfum.png"
     },
     {
         id: 229,
@@ -2756,7 +2756,7 @@ const perfumes = [
         badge: "Más vendido",
         popularity: 96,
         details: "Famoso por su increíble aroma dulzón, aéreo y parecido a perfumes nicho de gran lujo (como Baccarat Rouge) a una fracción del precio.",
-        image: "cloud.png"
+        image: "Ariana Grande Cloud EDP 100ML.png"
     },
     {
         id: 230,
@@ -2768,7 +2768,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 92,
         details: "Una variante vibrante que le añade un toque afrutado de pitahaya y bayas silvestres al ADN dulce original.",
-        image: "cloudpink.png"
+        image: "ArianaGrandeCloudPinkEDP100ML.png"
     },
     {
         id: 231,
@@ -2780,7 +2780,7 @@ const perfumes = [
         badge: "",
         popularity: 90,
         details: "Como su nombre indica, es una explosión de dulces y caramelos. Súper golosa, tierna y coqueta.",
-        image: "sweetlikecandy.png"
+        image: "ArianaGrandeSweetLikeCandyEDP.png"
     },
     {
         id: 232,
@@ -2792,7 +2792,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 95,
         details: "El icónico tacón en versión rosa pastel. Una expresión floral y avainillada, sumamente romántica y empolvada.",
-        image: "goodgirlblush.png"
+        image: "CH Good Girl Blush 80ML.png"
     },
     {
         id: 233,
@@ -2804,7 +2804,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 96,
         details: "La dualidad de la mujer moderna. Fragancia audaz, dulce y sensual, ideal para la noche y eventos especiales.",
-        image: "goodgirl.png"
+        image: "CH Good Girl Blush 80ML.png"
     },
     {
         id: 234,
@@ -2816,7 +2816,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 94,
         details: "Un aroma electrizante y muy moderno. Mezcla frutas oscuras con acordes terrosos y metálicos. Proyección excelente.",
-        image: "badboycobalt.png"
+        image: "CHBadBoyCobaltEDP.png"
     },
     {
         id: 235,
@@ -2828,7 +2828,7 @@ const perfumes = [
         badge: "",
         popularity: 91,
         details: "Una concentración densa y nocturna del chico malo, con maderas oscuras y especias orientales magnéticas.",
-        image: "badboyelixir.png"
+        image: "CHBadBoyElixir100ML.png"
     },
     {
         id: 236,
@@ -2840,7 +2840,7 @@ const perfumes = [
         badge: "Clásico",
         popularity: 95,
         details: "El aroma de la victoria. Una mezcla fresca y metálica que ha sido el estándar de versatilidad masculina por años.",
-        image: "invictus.png"
+        image: "INVICTUS EDT 100ML.png"
     },
     {
         id: 237,
@@ -2852,7 +2852,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 96,
         details: "Un monstruo en proyección. Completamente distinto al original, siendo extremadamente dulce, oscuro e ideal para salir de fiesta.",
-        image: "invictuselixir.png"
+        image: "Paco Rabanne Invictus Victory Elixir 100ML.png"
     },
     {
         id: 238,
@@ -2864,7 +2864,7 @@ const perfumes = [
         badge: "",
         popularity: 88,
         details: "El famoso robot, ahora en un perfil más maduro. Una noche oscura con lavanda, cardamomo y vainilla adictiva.",
-        image: "phantomparfum.png"
+        image: "PacoRabannePhantomParfum100ML.png"
     },
     {
         id: 239,
@@ -2876,7 +2876,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 93,
         details: "Una reinvención del lingote de oro. Incorpora un acorde solar y floral (nardos) que junto al cuero salado lo hacen único y opulento.",
-        image: "1millionparfum.png"
+        image: "PacoRabanneOneMillionParfum100ML.png"
     },
     {
         id: 240,
@@ -2902,7 +2902,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Una variante más fresca y eléctrica del clásico Spicebomb, con acordes verdes y un fondo tostado ideal para la noche urbana.",
-        image: "spicebombnightvision.png"
+        image: "Viktor&RolfSpicebombNightVisionEDT.png"
     },
     {
         id: 242,
@@ -2914,11 +2914,11 @@ const perfumes = [
         badge: "Premium",
         popularity: 94,
         details: "El clásico renovado en una concentración Parfum muy madura, ahumada y sumamente elegante para ocasiones formales.",
-        image: "adgparfum.png"
+        image: "AcquaDiGioParfum125ML.png"
     },
     {
         id: 243,
-        name: "Acqua Di Gio Profondo EDP 100ML",
+        name: "AcquaDiGioProfondoEDP100ML",
         category: "hombre",
         price: 389,
         description: "Inmersión oceánica, notas minerales y mandarina",
@@ -2938,7 +2938,7 @@ const perfumes = [
         badge: "Nuevo",
         popularity: 92,
         details: "Mayor duración y fijación que el Profondo clásico, elevando los acordes resinosos y marinos a su máxima expresión.",
-        image: "adgprofondoparfum.png"
+        image: "AcquaDiGioProfondoParfum100ML.png"
     },
     {
         id: 245,
@@ -2950,7 +2950,7 @@ const perfumes = [
         badge: "Económico",
         popularity: 90,
         details: "Una fragancia deportiva, fresca y súper limpia. Excelente opción para después del gimnasio o días de verano intensos.",
-        image: "legendspirit.png"
+        image: "MontblancLegendSpirit.png"
     },
     {
         id: 246,
@@ -2962,7 +2962,7 @@ const perfumes = [
         badge: "",
         popularity: 88,
         details: "Una evolución más densa y masculina del clásico Legend, perfecta para proyectar madurez y seguridad en la oficina.",
-        image: "legendedp.png"
+        image: "MontblancLegendEDP.png"
     },
     {
         id: 247,
@@ -2974,7 +2974,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Un aroma moderno y revitalizante, que emula el aire fresco de la montaña con acordes terrosos y metálicos atrayentes.",
-        image: "explorerplatinum.png"
+        image: "MontblancExplorerPlatinumEDP.png"
     },
     {
         id: 248,
@@ -2986,7 +2986,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Inspirada en las carreras de veleros, ofrece una limpieza inigualable, fría, aromática y muy pulcra para uso diario.",
-        image: "lunarossa.png"
+        image: "PradaLunaRossaEDT.png"
     },
     {
         id: 249,
@@ -2998,7 +2998,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 93,
         details: "Misteriosa, atalcada y oscura. Es la opción perfecta de Prada para noches frías y encuentros cercanos.",
-        image: "lunarossablack.png"
+        image: "PradaLunaRossaBlackEDP100ML.png"
     },
     {
         id: 250,
@@ -3022,7 +3022,7 @@ const perfumes = [
         badge: "Clásico",
         popularity: 96,
         details: "El aroma de Nueva York. Notas de hierba cortada, jengibre y maderas que nunca pasan de moda y gustan a todo el mundo.",
-        image: "212mennyc.png"
+        image: "212 ch.png"
     },
     {
         id: 252,
@@ -3034,7 +3034,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 94,
         details: "Hecha para la vida nocturna. Una explosión de licor de absenta dulce, perfecta para destacar en antros y fiestas.",
-        image: "212vipblack.png"
+        image: "CarolinaHerrera212VIPBlackEDP100ML.png"
     },
     {
         id: 253,
@@ -3046,7 +3046,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Atrevida y fiestera, es una fragancia con notas alicoradas tropicales que inyecta mucha energía en salidas nocturnas.",
-        image: "212vipmen.png"
+        image: "CH212VIPMEN.png"
     },
     {
         id: 254,
@@ -3058,7 +3058,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "La reina de la exclusividad. Un aroma dulce, alicorado y cremoso, para las mujeres que no siguen las reglas, las escriben.",
-        image: "212vipwomen.png"
+        image: "CH212VIPEDP.png"
     },
     {
         id: 255,
@@ -3082,7 +3082,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Fragancia magnética con acordes cálidos y atalcados, muy seductora para climas templados o eventos de noche.",
-        image: "212sexy.png"
+        image: "CH212SexyEDT.png"
     },
     {
         id: 257,
@@ -3094,7 +3094,7 @@ const perfumes = [
         badge: "Clásico",
         popularity: 93,
         details: "Una obra maestra atemporal. Famosa por su distintivo y polarizante olor a cuero combinado con hojas de violeta ardiente.",
-        image: "fahrenheit.png"
+        image: "DiorFahrenheitEDT100ML.png"
     },
     {
         id: 258,
@@ -3106,7 +3106,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Versión fresca y dorada de la línea The One. Mantiene la seducción pero agrega cítricos muy potentes y terrosos.",
-        image: "gabanaoneedp.png"
+        image: "Dolce&GabbanaTheOneGoldEDP.png"
     },
     {
         id: 259,
@@ -3130,7 +3130,7 @@ const perfumes = [
         badge: "Tamaño Grande",
         popularity: 91,
         details: "La potencia inconfundible de Dior Fahrenheit, presentada en una lujosa y masiva botella de 200ml.",
-        image: "fahrenheit200.png"
+        image: "DiorFahrenheitEDT200ML.png"
     },
     {
         id: 261,
@@ -3166,7 +3166,7 @@ const perfumes = [
         badge: "Tamaño Grande",
         popularity: 94,
         details: "La versión más madura y suave de Sauvage en un tamaño gigante. Mucho sándalo cremoso, haba tonka y una proyección más controlada.",
-        image: "sauvageparfum200.png"
+        image: "DiorSauvageParfum200ML.png"
     },
     {
         id: 264,
@@ -3178,7 +3178,7 @@ const perfumes = [
         badge: "Tamaño Grande",
         popularity: 95,
         details: "Para aquellos que han convertido a Sauvage EDP en su firma diaria, aquí está la presentación de 200ml.",
-        image: "sauvageedp200.png"
+        image: "Dior Sauvage EDP 200ML.png"
     },
     {
         id: 265,
@@ -3202,7 +3202,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 88,
         details: "Versión tester. Una mezcla afrutada, polvosa y sumamente lujosa. Ideal para días primaverales donde buscas destacar con opulencia.",
-        image: "accentotester.png"
+        image: "XerjoffAccento(Tester).png"
     },
     {
         id: 267,
@@ -3214,7 +3214,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 99,
         details: "Una obra de arte absoluta. Rinde homenaje a Sicilia, combinando la rica miel dulce y hojas de tabaco con cítricos súper brillantes.",
-        image: "naxos.png"
+        image: "Xerjoff Naxos 100ML.png"
     },
     {
         id: 268,
@@ -3226,7 +3226,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 91,
         details: "Presentación original comercial. Elegancia en botella morada. Combina piña fresca, notas florales de jacinto y un iris cautivador.",
-        image: "accento.png"
+        image: "XerjoffAccento.png"
     },
     {
         id: 269,
@@ -3238,7 +3238,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 95,
         details: "Posiblemente uno de los perfumes más refrescantes del mundo nicho. Súper herbáceo, cítrico y revitalizante para el sol extremo.",
-        image: "torino21.png"
+        image: "Xerjoff Torino 21 100ML.png"
     },
     {
         id: 270,
@@ -3262,7 +3262,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 93,
         details: "Comparte el ADN del Erba Pura, pero con un matiz ligeramente más maduro, especiado y con una presentación dorada espectacular.",
-        image: "erbagold.png"
+        image: "XerjoffErbaGold100ML.png"
     },
     {
         id: 272,
@@ -3274,7 +3274,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 89,
         details: "La misma explosión de menta y albahaca súper refrescante, en formato Tester más económico.",
-        image: "torino21tester.png"
+        image: "XerjoffTorino21(Tester).png"
     },
     {
         id: 273,
@@ -3286,7 +3286,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 92,
         details: "El aclamado best-seller frutal de Xerjoff, ofrecido en caja tester para quienes priorizan el jugo puro.",
-        image: "erbapuratester.png"
+        image: "XERJOFFERBAPURATESTER.png"
     },
     {
         id: 274,
@@ -3298,7 +3298,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 90,
         details: "Rico aroma de naranjas sicilianas y maderas nobles en su versión de caja sencilla o probador.",
-        image: "erbagoldtester.png"
+        image: "XerjoffErbaGold(Tester)100ML.png"
     },
     {
         id: 275,
@@ -3310,7 +3310,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 94,
         details: "Una fragancia icónica. Sumamente oscura, terrosa, dulce y floral. Derrocha un misterio y lujo inigualables.",
-        image: "blackorchid.png"
+        image: "TomFordBlackOrchidEDP50ML.png"
     },
     {
         id: 276,
@@ -3334,7 +3334,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 95,
         details: "El aroma de un asiento de cuero de lujo nuevo. Extremadamente realista, audaz y equilibrado con un corazón floral suave.",
-        image: "ombreleather.png"
+        image: "TomFordOmbreLeatherEDP50ML.png"
     },
     {
         id: 278,
@@ -3346,7 +3346,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 99,
         details: "La joya de la corona nicho para climas templados. Sumamente elegante, dulce y especiada, cautivando cualquier olfato.",
-        image: "marlylaton.png"
+        image: "ParfumsDeMarlyLayton125ML.png"
     },
     {
         id: 279,
@@ -3358,7 +3358,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 96,
         details: "Una propuesta dulce espectacular. Vainilla ambarina cálida y praliné especiado, brindando muchísima modernidad.",
-        image: "althair.png"
+        image: "ALTHAIR PARFUMS DE.png"
     },
     {
         id: 280,
@@ -3382,7 +3382,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 91,
         details: "La inigualable esencia de manzana y vainilla cálida de Layton, presentada en versión probador a un mejor precio.",
-        image: "laytontester.png"
+        image: "eMarlyLayton(Tester)125ML.png"
     },
     {
         id: 282,
@@ -3394,7 +3394,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 88,
         details: "Un perfume ultra-nicho divertido y alucinante. Simula un cóctel veraniego lleno de frutas suculentas y coco lactónico.",
-        image: "summerhammer.png"
+        image: "LorenzoPazzagliaSummerHammer.png"
     },
     {
         id: 283,
@@ -3406,7 +3406,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 89,
         details: "Un gourmand extremadamente adictivo, lleno de notas mantecosas de vainilla, cacao cremoso y muchísima azúcar.",
-        image: "sugarkisses.png"
+        image: "LorenzoPazzagliaSugaKisses.png"
     }
 
 
