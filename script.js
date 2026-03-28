@@ -157,7 +157,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Fragancia intensa con perfil nocturno, combinando especias oscuras y maderas nobles, ideal para eventos de noche.",
-        image: "OdysseyHommeBlack100ML.png"
+        image: "OdysseyHommeBlack100.png"
     },
     {
         id: 14,
@@ -772,7 +772,7 @@ const perfumes = [
         badge: "Top Ventas",
         popularity: 93,
         details: "Versión Intense del famoso L'Aventure. Su salida de elemí y limón es más rica y su secado amaderado proyecta por muchas horas.",
-        image: "AlHaramainL'AventureIntense100ML.png"
+        image: "AlHaramainL'AventureIntense.png"
     },
     {
         id: 65,
@@ -892,7 +892,7 @@ const perfumes = [
         badge: "Económico",
         popularity: 96,
         details: "Un clásico indiscutible. Hoja verde y manzana abren el paso a loto y mimosa. Perfecto para uso diario o el gimnasio por su extrema limpieza.",
-        image: "Nautica Voyage EDR 100ML.png"
+        image: "Nautica Voyage EDT 100ML.png"
     },
     {
         id: 75,
@@ -1458,7 +1458,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 88,
         details: "Una fragancia totalmente enfocada en las amantes de la vainilla. Ofrece una experiencia dulce, cálida y súper reconfortante como un postre recién horneado.",
-        image: "GiveMeGourmandVanillaFreakv.png"
+        image: "GiveMGourmandVanillaFreak.png"
     },
     {
         id: 122,
@@ -1554,7 +1554,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Una propuesta cítrica y oceánica elegante de Maison Alhambra. Ideal para la oficina o el uso diario en climas cálidos.",
-        image: "JeanLoweAzure.png"
+        image: "JeaLoweAzure.png"
     },
     {
         id: 130,
@@ -1710,7 +1710,7 @@ const perfumes = [
         badge: "Extremo",
         popularity: 94,
         details: "Concentración Parfum para quienes buscan rendimiento nuclear. Oscurece el dulzor frutal con toques más terrosos y masculinos.",
-        image: "bhararakingparfum.png"
+        image: "BHARARA KING PARFUM.png"
     },
     {
         id: 143,
@@ -1782,7 +1782,7 @@ const perfumes = [
         badge: "Tendencia",
         popularity: 95,
         details: "Famoso a nivel mundial por su aroma adictivo a leche caliente con miel, caramelo y almendras tiernas.",
-        image: "eclairelattafa.png"
+        image: "eclaire.png"
     },
     {
         id: 149,
@@ -2107,7 +2107,7 @@ const perfumes = [
         badge: "",
         popularity: 81,
         details: "Elegancia en formato blanco. Destaca por su aroma pulcro y cremoso a flores blancas y almizcles esponjosos.",
-        image: "venenoblanco.png"
+        image: "venenoblanc.png"
     },
     {
         id: 176,
@@ -2119,7 +2119,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Maison Alhambra Glacier Le Noir es un aroma rico y cálido, que evoca elegancia nocturna mediante cardamomo y maderas cremosas.",
-        image: "GlacierLeNoir.png"
+        image: "GlacieLeNoir.png"
     },
     {
         id: 177,
@@ -2203,7 +2203,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Se caracteriza por sus acordes herbales limpios y un toque de musgo blanco que proporciona una sensación de pureza absoluta.",
-        image: "GameOfSpadesEmerald.png"
+        image: "GameOfpadesEmerald.png"
     },
     {
         id: 184,
@@ -2251,7 +2251,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 89,
         details: "El premio mayor para quienes aman los perfumes llamativos. Dulce intenso con frutas tropicales y un secado cálido.",
-        image: "Game Of Spades Jackpot.png"
+        image: "GameOfSpadesJackpot.png"
     },
     {
         id: 188,
@@ -2358,7 +2358,7 @@ const perfumes = [
         color: "#ecf0f1",
         badge: "",
         popularity: 81,
-        details: "Como la luz de la luna, es una fragancia suave, reconfortante y atalcada, predominando almizcles blancos muy limpios.",
+        details: "Como la luz tade la luna, es una fragancia suave, reconfortante y atalcada, predominando almizcles blancos muy limpios.",
         image: "gameofspadesmoon.png"
     },
     {
@@ -2407,7 +2407,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Armaf trae una fragancia juvenil y sumamente chic, mezclando notas de lichi, rosa turca y un fondo de vainilla y almizcle.",
-        image: "MissArmahic.png"
+        image: "MissArmaChic.png"
     },
     
     {
@@ -2540,7 +2540,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 94,
         details: "Una fragancia sumamente adictiva y ardiente. Su salida picante de jengibre se funde en un corazón de vainilla que dura horas.",
-        image: "AzzaroTheMostWantedParfum100ML.png"
+        image: "AzzaroTheMostWanteParfum100ML.png"
     },
     {
         id: 212,
@@ -2624,7 +2624,7 @@ const perfumes = [
         badge: "Diseñador",
         popularity: 94,
         details: "El verano en una botella. Es dulce pero fresco, con una nota de coco súper prominente ideal para la playa.",
-        image: "JeanPaulGaultierLeMaleLeParfum125ML.png"
+        image: "JeanPaulGaultierLeBeauEDT125ML.png"
     },
     {
         id: 219,
@@ -2660,7 +2660,7 @@ const perfumes = [
         badge: "",
         popularity: 92,
         details: "Versión cálida del Eros. Introduce mandarina italiana, pimienta negra y romero silvestre, creando un contraste ardiente y dulce.",
-        image: "VersaceErosFlameEDP100ML.png"
+        image: "VersaceErosFlameEDP.png"
     },
     {
         id: 222,
@@ -2684,7 +2684,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Pura frescura para el calor extremo. Súper ligera, acuática y brillante, perfecta para días soleados.",
-        image: "VersaceEauFraiche100ML.png"
+        image: "VersaceEauFraiche.png"
     },
     {
         id: 224,
@@ -2864,7 +2864,7 @@ const perfumes = [
         badge: "",
         popularity: 88,
         details: "El famoso robot, ahora en un perfil más maduro. Una noche oscura con lavanda, cardamomo y vainilla adictiva.",
-        image: "PacoRabannePhantomParfum100ML.png"
+        image: "PacoRabannePhantomParfum.png"
     },
     {
         id: 239,
@@ -2974,7 +2974,7 @@ const perfumes = [
         badge: "",
         popularity: 85,
         details: "Un aroma moderno y revitalizante, que emula el aire fresco de la montaña con acordes terrosos y metálicos atrayentes.",
-        image: "MontblancExplorerPlatinumEDP.png"
+        image: "MontblancExplorerPlatinumEDP (2).png"
     },
     {
         id: 248,
@@ -2986,7 +2986,7 @@ const perfumes = [
         badge: "",
         popularity: 89,
         details: "Inspirada en las carreras de veleros, ofrece una limpieza inigualable, fría, aromática y muy pulcra para uso diario.",
-        image: "PradaLunaRossaEDT.png"
+        image: "Prada Luna Rossa EDT 100ML.png"
     },
     {
         id: 249,
@@ -3046,7 +3046,7 @@ const perfumes = [
         badge: "",
         popularity: 87,
         details: "Atrevida y fiestera, es una fragancia con notas alicoradas tropicales que inyecta mucha energía en salidas nocturnas.",
-        image: "CH212VIPMEN.png"
+        image: "CH212VIPEDTMEN.png"
     },
     {
         id: 254,
@@ -3070,7 +3070,7 @@ const perfumes = [
         badge: "Popular",
         popularity: 95,
         details: "Radiante, frutal y efervescente. Un brindis con champán rosado ideal para mujeres elegantes y sumamente femeninas.",
-        image: "212viprose.png"
+        image: "CH 212 VIP ROSE.png"
     },
     {
         id: 256,
@@ -3106,7 +3106,7 @@ const perfumes = [
         badge: "",
         popularity: 86,
         details: "Versión fresca y dorada de la línea The One. Mantiene la seducción pero agrega cítricos muy potentes y terrosos.",
-        image: "Dolce&GabbanaTheOneGoldEDP.png"
+        image: "Dolce&GabbanaTheOnGoldEDP.png"
     },
     {
         id: 259,
@@ -3118,7 +3118,7 @@ const perfumes = [
         badge: "Más vendido",
         popularity: 97,
         details: "Posiblemente una de las mejores fragancias para citas del mundo. Cálida, ambarina y ridículamente atractiva.",
-        image: "theoneedp.png"
+        image: "dolce & gabbana the one EDP.png"
     },
     {
         id: 260,
@@ -3286,7 +3286,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 92,
         details: "El aclamado best-seller frutal de Xerjoff, ofrecido en caja tester para quienes priorizan el jugo puro.",
-        image: "XERJOFFERBAPURATESTER.png"
+        image: "XERJOFFERBPURATESTER.png"
     },
     {
         id: 274,
@@ -3322,7 +3322,7 @@ const perfumes = [
         badge: "Premium",
         popularity: 96,
         details: "Un viaje gourmand opulento. Huele a cerezas maduras bañadas en licor dulce con un acorde cremoso de almendra amarga.",
-        image: "lostcherry.png"
+        image: "Tom Ford Lost Cherry.png"
     },
     {
         id: 277,
@@ -3346,7 +3346,7 @@ const perfumes = [
         badge: "Nicho",
         popularity: 99,
         details: "La joya de la corona nicho para climas templados. Sumamente elegante, dulce y especiada, cautivando cualquier olfato.",
-        image: "ParfumsDeMarlyLayton125ML.png"
+        image: "parfums de marly layton 125ml.png"
     },
     {
         id: 279,
