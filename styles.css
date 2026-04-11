@@ -1483,25 +1483,3 @@ footer {
     }
 }
 
-/* ========== MODO OSCURO AUTOMÁTICO ========== */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color: #f5f5f5;
-        --text-color: #e0e0e0;
-        --text-light: #aaaaaa;
-        --white: #1e1e1e;
-        --gray-light: #2a2a2a;
-        --gray-medium: #3a3a3a;
-        --shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    
-    body {
-        background-color: #1e1e1e;
-    }
-    
-    .perfume-card {
-        background-color: #252525;
-    }
-    
-    /* ... más ajustes ... */
-}
