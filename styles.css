@@ -412,9 +412,24 @@ nav ul li a.active::after {
 
 .perfumes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
+
+/* En tablets: 2 productos */
+@media (max-width: 992px) {
+    .perfumes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* En móviles: 1 producto */
+@media (max-width: 576px) {
+    .perfumes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .perfume-card {
     background-color: var(--white);
