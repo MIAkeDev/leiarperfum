@@ -3246,7 +3246,7 @@ const perfumes = [
         badge: "Arabe",
         popularity: 90,
         details: "Un perfume árabe fresco y original con notas de Bergamota, Yuzu, Iris, Salvia y Acorde de sal marina.",
-        image: "LorenzoPazzagliaSummerHammer.png"
+        image: "waha.png"
     }
 
 
