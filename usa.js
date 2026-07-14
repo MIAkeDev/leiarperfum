@@ -1,167 +1,116 @@
-// ========== PRODUCTOS ==========
+// usa.js
 
-const crocs = [
-    {
-        id: 1,
-        name: "Crocs Classic Clog",
-        category: "Crocs",
-        price: 49.99,
-        description: "Cómodos y ligeros, ideales para cualquier ocasión.",
-        image: "img/croc.png",
-        badge: "Top ventas"
-    },
-    {
-        id: 2,
-        name: "Crocs Literide Pacer",
-        category: "Crocs",
-        price: 69.99,
-        description: "Diseño deportivo con máxima comodidad.",
-        image: "img/crocsli.png",
-        badge: "Nuevo"
-    },
-    {
-        id: 3,
-        name: "Crocs Unisex Baya",
-        category: "Crocs",
-        price: 39.99,
-        description: "Versión ligera y moderna.",
-        image: "img/crocs-baya.jpg",
-        badge: ""
-    }
-];
+const products = {
+    crocs: [
+        {
+            id: 1,
+            name: "Crocs Classic Clog",
+            price: 49.99,
+            image: "https://via.placeholder.com/300x200/1e3c72/fff?text=Crocs+Classic",
+            description: "Los clásicos Crocs para hombre y mujer. Cómodos, ligeros y versátiles."
+        },
+        {
+            id: 2,
+            name: "Crocs Baya Clog",
+            price: 44.99,
+            image: "https://via.placeholder.com/300x200/2a5298/fff?text=Crocs+Baya",
+            description: "Diseño moderno con ventilación adicional. Perfectos para todo el día."
+        }
+    ],
+    iphones: [
+        {
+            id: 101,
+            name: "iPhone 17 Pro Max",
+            price: 1299,
+            image: "https://via.placeholder.com/300x200/1e3c72/fff?text=iPhone+17+Pro+Max",
+            description: "Última generación. Cámara de 48MP, chip A19, pantalla OLED 6.9″."
+        },
+        {
+            id: 102,
+            name: "iPhone 16 Pro Max",
+            price: 1199,
+            image: "https://via.placeholder.com/300x200/2a5298/fff?text=iPhone+16+Pro+Max",
+            description: "Cámara de 48MP, chip A18, batería de larga duración, 6.9″."
+        },
+        {
+            id: 103,
+            name: "iPhone 15 Pro Max",
+            price: 1099,
+            image: "https://via.placeholder.com/300x200/1e3c72/fff?text=iPhone+15+Pro+Max",
+            description: "Titanio, chip A17, cámara de 48MP, USB-C. Excelente rendimiento."
+        }
+    ],
+    relojes: [
+        {
+            id: 201,
+            name: "Apple Watch Series 9",
+            price: 399,
+            image: "https://via.placeholder.com/300x200/2a5298/fff?text=Apple+Watch+S9",
+            description: "Pantalla siempre activa, chip S9, medición de temperatura."
+        },
+        {
+            id: 202,
+            name: "Samsung Galaxy Watch 6",
+            price: 329,
+            image: "https://via.placeholder.com/300x200/1e3c72/fff?text=Galaxy+Watch+6",
+            description: "Reloj inteligente con análisis de sueño, ECG y deportes."
+        }
+    ],
+    carteras: [
+        {
+            id: 301,
+            name: "Cartera de Cuero Premium",
+            price: 89.99,
+            image: "https://via.placeholder.com/300x200/2a5298/fff?text=Cartera+Cuero",
+            description: "Cartera de cuero genuino con múltiples ranuras para tarjetas."
+        },
+        {
+            id: 302,
+            name: "Billetera Minimalista",
+            price: 49.99,
+            image: "https://via.placeholder.com/300x200/1e3c72/fff?text=Billetera+RFID",
+            description: "Billetera delgada con bloqueo RFID, ideal para viajes."
+        }
+    ]
+};
 
-const iphones = [
-    {
-        id: 4,
-        name: "iPhone 15 Pro",
-        category: "iPhones",
-        price: 999.99,
-        description: "Cámara de 48 MP, chip A17 Pro, titanio.",
-        image: "img/iphone15pro.jpg",
-        badge: "Último modelo"
-    },
-    {
-        id: 5,
-        name: "iPhone 14",
-        category: "iPhones",
-        price: 699.99,
-        description: "Rendimiento excelente, batería todo el día.",
-        image: "img/iphone14.jpg",
-        badge: ""
-    },
-    {
-        id: 6,
-        name: "iPhone 13",
-        category: "iPhones",
-        price: 549.99,
-        description: "Calidad precio imbatible.",
-        image: "img/iphone13.jpg",
-        badge: "Oferta"
-    }
-];
-
-const relojes = [
-    {
-        id: 7,
-        name: "Casio G-Shock",
-        category: "Relojes",
-        price: 129.99,
-        description: "Resistente, ideal para aventuras.",
-        image: "img/gshock.jpg",
-        badge: "Resistente"
-    },
-    {
-        id: 8,
-        name: "Fossil Gen 6",
-        category: "Relojes",
-        price: 299.99,
-        description: "Smartwatch con GPS y Wear OS.",
-        image: "img/fossil-gen6.jpg",
-        badge: "Smart"
-    },
-    {
-        id: 9,
-        name: "Invicta Pro Diver",
-        category: "Relojes",
-        price: 89.99,
-        description: "Estilo clásico automático.",
-        image: "img/invicta.png",
-        badge: ""
-    }
-];
-
-const carteras = [
-    {
-        id: 10,
-        name: "Billetera de Cuero",
-        category: "Carteras",
-        price: 45.99,
-        description: "Cuero genuino, 12 espacios para tarjetas.",
-        image: "img/cuero-clasica.jpg",
-        badge: "Premium"
-    },
-    {
-        id: 11,
-        name: "Cartera Minimalista",
-        category: "Carteras",
-        price: 29.99,
-        description: "Delgada y moderna, ideal para llevar lo esencial.",
-        image: "img/minimalista.jpg",
-        badge: ""
-    },
-    {
-        id: 12,
-        name: "Cartera con Monedero",
-        category: "Carteras",
-        price: 39.99,
-        description: "Incluye cierre metálico y compartimiento para monedas.",
-        image: "img/monedero.jpg",
-        badge: "Más vendido"
-    }
-];
-
-// ========== FUNCIONES PARA RENDERIZAR ==========
-
-function renderProducts(products, containerId) {
+function renderProducts(categoryId, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    const html = products.map(product => `
-        <div class="perfume-card">
-            <div class="perfume-image">
-                <img src="${product.image}" alt="${product.name}" class="perfume-real-image" style="object-fit: contain; width: 70%; height: 70%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                ${product.badge ? `<span class="perfume-badge">${product.badge}</span>` : ''}
+    const items = products[categoryId] || [];
+
+    if (items.length === 0) {
+        container.innerHTML = `<div class="no-products">Próximamente más productos...</div>`;
+        return;
+    }
+
+    let html = '';
+    items.forEach(p => {
+        // URL de WhatsApp con el producto
+        const whatsappMsg = `Hola%20Estoy%20interesado%20en%20${encodeURIComponent(p.name)}%20(precio%20$${p.price})`;
+        const whatsappLink = `https://wa.me/920632668?text=${whatsappMsg}`;
+
+        html += `
+            <div class="product-card">
+                <img src="${p.image}" alt="${p.name}" loading="lazy" />
+                <h3>${p.name}</h3>
+                <div class="price">$${p.price.toFixed(2)}</div>
+                <p class="desc">${p.description}</p>
+                <a href="${whatsappLink}" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Consultar
+                </a>
             </div>
-            <div class="perfume-info">
-                <p class="perfume-category">${product.category}</p>
-                <h3 class="perfume-name">${product.name}</h3>
-                <p class="perfume-description">${product.description}</p>
-                <div class="perfume-price">S/.${product.price.toFixed(2)}</div>
-                <div class="perfume-actions">
-                    <button class="whatsapp-btn" data-name="${product.name}" data-price="${product.price}">Consultar por WhatsApp</button>
-                </div>
-            </div>
-        </div>
-    `).join('');
+        `;
+    });
 
     container.innerHTML = html;
-
-    // Agregar eventos WhatsApp
-    document.querySelectorAll('.whatsapp-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const name = btn.getAttribute('data-name');
-            const price = btn.getAttribute('data-price');
-            const message = `Hola, estoy interesado en: *${name}* (S/.${price}). ¿Podrían darme más información?`;
-            const url = `https://wa.me/920632668?text=${encodeURIComponent(message)}`;
-            window.open(url, '_blank');
-        });
-    });
 }
 
-// ========== CARGAR TODO AL INICIO ==========
-document.addEventListener('DOMContentLoaded', () => {
-    renderProducts(crocs, 'crocs-grid');
-    renderProducts(iphones, 'iphones-grid');
-    renderProducts(relojes, 'relojes-grid');
-    renderProducts(carteras, 'carteras-grid');
+// Renderizar todas las secciones al cargar la página
+document.addEventListener('DOMContentLoaded', function() {
+    renderProducts('crocs', 'crocs-grid');
+    renderProducts('iphones', 'iphones-grid');
+    renderProducts('relojes', 'relojes-grid');
+    renderProducts('carteras', 'carteras-grid');
 });

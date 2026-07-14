@@ -3407,7 +3407,7 @@ function sendWhatsAppMessage(productId) {
                    `Me podrían dar más información, por favor.`;
     
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '920632668';
+    const phoneNumber = '931637965';
     
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
 }
@@ -3439,7 +3439,7 @@ function consultWhatsApp(productId) {
                    `¡Gracias!`;
     
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '920632668';
+    const phoneNumber = '931637965';
     
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
     showNotification(`Redirigiendo a WhatsApp para consultar sobre ${product.name}`);
