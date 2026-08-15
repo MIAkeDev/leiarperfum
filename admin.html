@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Administración | Leiar</title>
+    <link rel="icon" type="image/png" href="img/leairlogos.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <main class="admin-shell">
+        <section id="login-view" class="login-card">
+            <img src="img/leairlogos.png" alt="Leiar" class="admin-logo">
+            <h1>Administración Leiar</h1>
+            <p>Acceso exclusivo para personal autorizado.</p>
+            <form id="login-form">
+                <label>Correo<input id="login-email" type="email" autocomplete="username" required></label>
+                <label>Contraseña<input id="login-password" type="password" autocomplete="current-password" required></label>
+                <button type="submit">Ingresar</button>
+                <p id="login-message" class="message" role="status"></p>
+            </form>
+        </section>
+
+        <section id="dashboard-view" class="dashboard" hidden>
+            <header class="admin-header">
+                <div><h1>Catálogo de perfumes</h1><p id="session-email"></p></div>
+                <div class="header-actions">
+                    <button id="new-product" type="button">Nuevo perfume</button>
+                    <button id="logout" type="button" class="secondary">Cerrar sesión</button>
+                </div>
+            </header>
+
+            <div class="toolbar">
+                <input id="admin-search" type="search" placeholder="Buscar por nombre...">
+                <select id="status-filter">
+                    <option value="all">Todos</option>
+                    <option value="active">Activos</option>
+                    <option value="archived">Archivados</option>
+                </select>
+                <span id="product-count"></span>
+            </div>
+            <p id="dashboard-message" class="message" role="status"></p>
+            <div id="products-list" class="products-list"></div>
+        </section>
+    </main>
+
+    <dialog id="product-dialog">
+        <form id="product-form">
+            <div class="dialog-header">
+                <h2 id="form-title">Nuevo perfume</h2>
+                <button id="close-dialog" type="button" class="icon-button" aria-label="Cerrar">×</button>
+            </div>
+            <input id="product-id" type="hidden">
+            <input id="current-image" type="hidden">
+            <div class="form-grid">
+                <label class="wide">Nombre<input id="product-name" maxlength="150" required></label>
+                <label>Categoría
+                    <select id="product-category" required>
+                        <option value="hombre">Hombre</option><option value="mujer">Mujer</option>
+                        <option value="unisex">Unisex</option><option value="premium">Premium</option>
+                    </select>
+                </label>
+                <label>Precio S/<input id="product-price" type="number" min="0" step="0.01" required></label>
+                <label>Insignia<input id="product-badge" maxlength="40" placeholder="Nuevo, Premium..."></label>
+                <label>Popularidad<input id="product-popularity" type="number" min="0" max="100" value="0" required></label>
+                <label>Color<input id="product-color" type="color" value="#ffffff"></label>
+                <label>Estado<select id="product-active"><option value="true">Activo</option><option value="false">Archivado</option></select></label>
+                <label class="wide">Descripción corta<textarea id="product-description" rows="2" required></textarea></label>
+                <label class="wide">Detalles<textarea id="product-details" rows="4" required></textarea></label>
+                <label class="wide">Imagen (JPG, PNG, WebP o GIF; máximo 5 MB)
+                    <input id="product-image" type="file" accept="image/jpeg,image/png,image/webp,image/gif">
+                </label>
+                <div id="image-preview" class="image-preview wide"></div>
+            </div>
+            <p id="form-message" class="message" role="status"></p>
+            <div class="dialog-actions">
+                <button id="cancel-product" type="button" class="secondary">Cancelar</button>
+                <button id="save-product" type="submit">Guardar perfume</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
