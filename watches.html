@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Relojes elegantes, automáticos, deportivos y smartwatches en Leiar.">
+    <title>Relojes | Leiar</title>
+    <link rel="icon" type="image/png" href="img/leairlogos.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="watches.css">
+</head>
+<body class="watches-page">
+    <!-- Header y Navegación: se conserva igual que en la página principal -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-circle"><img src="img/leairlogos.png" alt="LEIAR" class="logo-img"></div>
+                <h1>PERFUM</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="perfumes.html">Perfumes</a></li>
+                    <li><a href="watches.html" class="active">Relojes</a></li>
+                    <li><a href="index.html#categorias">Categorías</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#emprendedores">Plan Emprendedor</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+                <div class="whatsapp-icon"><a href="https://wa.me/931637965?text=Hola%20Estoy%20interesado%20en%20sus%20relojes" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+            </nav>
+            <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-hero watches-catalog-hero">
+            <div class="catalog-title-wrap">
+                <span class="catalog-kicker">COLECCIÓN LEIAR</span>
+                <h1>RELOJES</h1>
+                <p>ELEGANTES <b>·</b> AUTOMÁTICOS <b>·</b> SMART</p>
+            </div>
+            <div class="catalog-floating-product watch-floating-product" aria-hidden="true"><img src="img/watches/nocturne-steel.jpg" alt=""></div>
+            <span class="catalog-stroke stroke-one" aria-hidden="true"></span>
+            <span class="catalog-stroke stroke-two" aria-hidden="true"></span>
+            <span class="catalog-stroke stroke-three" aria-hidden="true"></span>
+        </section>
+
+        <section id="coleccion-relojes" class="watch-catalog">
+            <div class="container">
+                <div class="watch-heading"><div><span>LEIAR WATCHES</span><h2>Colección destacada</h2></div><p>Modelos seleccionados con carácter, precisión y diseño. Consulta disponibilidad antes de comprar.</p></div>
+                <div class="watch-catalog-layout">
+                    <aside class="watch-sidebar">
+                        <p class="sidebar-title">Categorías</p>
+                        <div class="watch-filters">
+                            <button class="active" data-filter="all"><span>Todos los relojes</span><b>06</b></button>
+                            <button data-filter="hombre"><span>Hombre</span><b>03</b></button>
+                            <button data-filter="mujer"><span>Mujer</span><b>01</b></button>
+                            <button data-filter="unisex"><span>Unisex</span><b>02</b></button>
+                        </div>
+                        <div class="sidebar-divider"></div>
+                        <p class="sidebar-title">Compra segura</p>
+                        <ul class="watch-benefits"><li><i class="fas fa-check"></i> Atención personalizada</li><li><i class="fas fa-check"></i> Consulta disponibilidad</li><li><i class="fas fa-check"></i> Envíos coordinados</li></ul>
+                    </aside>
+                    <div class="watch-results">
+                        <div class="watch-tools">
+                            <span><b id="watch-result-count">6</b> modelos disponibles</span>
+                            <label class="watch-search"><i class="fas fa-search"></i><input id="watch-search" type="search" placeholder="Buscar reloj..."></label>
+                        </div>
+                        <p id="watch-status" class="watch-status"></p>
+                        <div id="watches-grid" class="watches-grid"></div>
+                    </div>
+                </div>
+                <div class="watch-quote"><div><span>¿NO ENCUENTRAS TU MODELO?</span><h3>Lo buscamos por ti.</h3><p>Envíanos una foto o el nombre del reloj y recibe una cotización personalizada.</p></div><a href="https://wa.me/51931637965?text=Hola%20Leiar,%20quiero%20cotizar%20un%20reloj" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Cotizar por WhatsApp</a></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="watch-modal" class="watch-modal" hidden>
+        <button class="watch-modal-close" aria-label="Cerrar">×</button>
+        <div class="watch-modal-card"><img id="modal-watch-image" alt=""><div><span id="modal-watch-style"></span><h2 id="modal-watch-name"></h2><p id="modal-watch-description"></p><p id="modal-watch-details"></p><strong id="modal-watch-price"></strong><a id="modal-watch-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Consultar disponibilidad</a></div></div>
+    </div>
+    <a class="floating-whatsapp" href="https://wa.me/51931637965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20relojes" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+        <i class="fab fa-whatsapp"></i><span>¿Buscas un reloj?</span>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="watches.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de perfumes nicho, diseñador y árabes de Leiar Parfum.">
+    <title>Perfumes | Leiar Parfum</title>
+    <link rel="icon" type="image/png" href="img/leairlogos.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="catalog-page">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-circle"><img src="img/leairlogos.png" alt="LEIAR" class="logo-img"></div>
+                <h1>PERFUM</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="perfumes.html" class="active">Perfumes</a></li>
+                    <li><a href="watches.html">Relojes</a></li>
+                    <li><a href="index.html#categorias">Categorías</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#emprendedores">Plan Emprendedor</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="whatsapp-icon">
+                    <a href="https://wa.me/51931637965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20perfumes" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </nav>
+            <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="catalog-title-wrap">
+                <span class="catalog-kicker">COLECCIÓN LEIAR</span>
+                <h1>PERFUMES</h1>
+                <p>NICHO <b>·</b> DISEÑADOR <b>·</b> ÁRABE</p>
+            </div>
+            <div class="catalog-floating-product" aria-hidden="true"><img src="img/khamrah.png" alt=""></div>
+            <span class="catalog-stroke stroke-one" aria-hidden="true"></span>
+            <span class="catalog-stroke stroke-two" aria-hidden="true"></span>
+            <span class="catalog-stroke stroke-three" aria-hidden="true"></span>
+        </section>
+
+        <section class="filters-section catalog-filters">
+            <div class="container">
+                <h3>Filtrar por:</h3>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="hombre">Hombre</button>
+                    <button class="filter-btn" data-filter="mujer">Mujer</button>
+                    <button class="filter-btn" data-filter="unisex">Unisex</button>
+                    <button class="filter-btn" data-filter="premium">Premium</button>
+                </div>
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Buscar perfume por nombre, marca o descripción..." class="search-input">
+                        <button id="clear-search" class="clear-search" style="display:none" aria-label="Limpiar búsqueda"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div id="search-results-count" class="search-results-count"></div>
+                </div>
+                <div class="sort">
+                    <label for="sort">Ordenar por:</label>
+                    <select id="sort">
+                        <option value="popular">Más populares</option>
+                        <option value="price-asc">Precio: menor a mayor</option>
+                        <option value="price-desc">Precio: mayor a menor</option>
+                        <option value="name">Nombre A-Z</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="perfumes" class="perfumes-section catalog-products">
+            <span class="section-ambient section-ambient-star" aria-hidden="true">✦</span>
+            <span class="section-ambient section-ambient-orb" aria-hidden="true"></span>
+            <div class="container">
+                <div class="perfumes-grid"><!-- Productos cargados desde Supabase --></div>
+            </div>
+        </section>
+    </main>
+
+    <a class="floating-whatsapp" href="https://wa.me/51931637965?text=Hola%2C%20quiero%20cotizar%20un%20perfume" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp"><i class="fab fa-whatsapp"></i><span>Escríbenos</span></a>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle"><img src="img/leairlogos.png" alt="LEIAR" class="logo-img"></div>
+                    <h2>LEIAR</h2><p>Tu destino para fragancias excepcionales</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#nosotros">Sobre nosotros</a></li>
+                        <li><a href="index.html#emprendedores">Plan Emprendedor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tienda virtual</p>
+                    <p><i class="fas fa-phone"></i> 931 637 965</p>
+                    <p><i class="fas fa-envelope"></i> leiarperf@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Leiar Perfumería. Todos los derechos reservados.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/leiar.pf" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@leiar.pf" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-content"><!-- Detalle cargado dinámicamente --></div>
+        </div>
+    </div>
+
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
