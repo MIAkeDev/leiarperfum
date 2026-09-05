@@ -14,11 +14,94 @@ let currentSearch = "";
 
 // ========== INICIALIZACIÓN ==========
 document.addEventListener('DOMContentLoaded', async function() {
-    await loadProductsFromSupabase();
-    renderPerfumes();
+    const hasCatalog = Boolean(document.querySelector('.perfumes-grid'));
+    if (hasCatalog) {
+        await loadProductsFromSupabase();
+        renderPerfumes();
+    }
     setupEventListeners();
     initCarousel(); // Carrusel inicializado correctamente
+    initFloatingEffects();
+    initRotatingHeroWord();
 });
+
+function initRotatingHeroWord() {
+    const element = document.querySelector('.rotating-word');
+    if (!element || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const words = ['perfume', 'producto', 'dispositivo'];
+    let wordIndex = 0;
+    let letterIndex = words[0].length;
+    let deleting = true;
+
+    const animate = () => {
+        const word = words[wordIndex];
+
+        if (deleting) {
+            letterIndex--;
+            element.textContent = word.slice(0, letterIndex);
+            if (letterIndex === 0) {
+                deleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                window.setTimeout(animate, 380);
+                return;
+            }
+            window.setTimeout(animate, 75);
+            return;
+        }
+
+        letterIndex++;
+        element.textContent = words[wordIndex].slice(0, letterIndex);
+        if (letterIndex === words[wordIndex].length) {
+            deleting = true;
+            window.setTimeout(animate, 1900);
+            return;
+        }
+        window.setTimeout(animate, 115);
+    };
+
+    window.setTimeout(animate, 2100);
+}
+
+function initFloatingEffects() {
+    const hero = document.querySelector('.hero');
+    const floatingItems = [...document.querySelectorAll('.floating-accent')];
+    if (!hero || floatingItems.length === 0) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    floatingItems.forEach((item, index) => {
+        item.style.setProperty('--reveal-delay', `${Math.min(index * 70, 350)}ms`);
+    });
+
+    requestAnimationFrame(() => hero.classList.add('floating-ready'));
+    if (reduceMotion || !window.matchMedia('(pointer: fine)').matches) return;
+
+    let frameId = null;
+    let pointerX = 0;
+    let pointerY = 0;
+
+    const updateParallax = () => {
+        floatingItems.forEach(item => {
+            const depth = Number(item.dataset.depth || 0.3);
+            item.style.setProperty('--parallax-x', `${pointerX * depth * 14}px`);
+            item.style.setProperty('--parallax-y', `${pointerY * depth * 10}px`);
+        });
+        frameId = null;
+    };
+
+    hero.addEventListener('pointermove', event => {
+        const rect = hero.getBoundingClientRect();
+        pointerX = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+        pointerY = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+        if (!frameId) frameId = requestAnimationFrame(updateParallax);
+    }, { passive: true });
+
+    hero.addEventListener('pointerleave', () => {
+        pointerX = 0;
+        pointerY = 0;
+        if (!frameId) frameId = requestAnimationFrame(updateParallax);
+    });
+}
 
 // ========== RENDERIZAR PERFUMES ==========
 function renderPerfumes() {

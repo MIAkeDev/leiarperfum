@@ -17,19 +17,19 @@
         <div class="container">
             <div class="logo">
                 <div class="logo-circle">
-                     <img src="img/leairlogos.png" alt="LEIAR" class="logo-img">
+                    <img src="img/leairlogos.png" alt="LEIAR" class="logo-img">
                 </div>
-                <h1>PARFUM</h1>
+                <h1>IMPORT</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="#" class="active">Inicio</a></li>
-                    <li><a href="#perfumes">Perfumes</a></li>
-                    <li><a href="#categorias">Categorías</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="perfumes.html">Perfumes</a></li>
+                    <!-- <li><a href="watches.html">Relojes</a></li> -->
+                    <!-- <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li> -->
                     <li><a href="#emprendedores">Plan Emprendedor</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    
+                    <!-- <li><a href="#contacto">Contacto</a></li> -->
                 </ul>
                 <div class="whatsapp-icon">
                     <a href="https://wa.me/931637965?text=Hola%20Estoy%20interesado%20en%20sus%20perfumes" target="_blank">
@@ -47,9 +47,9 @@
     <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h2>Encuentra tu fragancia perfecta</h2>
+                    <h2 aria-label="Encuentra tu fragancia, reloj o iPhone perfecto">Encuentra tu <span class="rotating-word" aria-hidden="true">perfume</span>soñado</h2>
                     <p>Descubre nuestra exclusiva colección de perfumes de diseñador, fragancias nicho y árabes.</p>
-                    <!--<a href="#perfumes" class="btn">Explorar colección</a> -->
+                    <a href="perfumes.html" class="btn hero-catalog-btn">Explorar colección <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="hero-image">
                     <div class="perfume-carousel">
@@ -72,54 +72,32 @@
                     </div>
                 </div>
             </div>
+            <div class="floating-scene" aria-hidden="true">
+                <div class="floating-accent floating-emoji float-import-plane" data-depth="0.35">
+                    <img src="img/decor/import-plane-3d.png" alt="">
+                </div>
+                <div class="floating-accent floating-bottle float-bottle-top" data-depth="0.55">
+                    <img src="img/yara.png" alt="">
+                </div>
+                <div class="floating-accent floating-bottle float-bottle-right" data-depth="0.75">
+                    <img src="img/khamrah.png" alt="">
+                </div>
+                <div class="floating-accent floating-emoji float-love-face" data-depth="0.65">
+                    <img src="img/decor/love-face-3d.png" alt="">
+                </div>
+                <div class="floating-accent floating-symbol float-sparkle-one" data-depth="0.25"><span>✦</span></div>
+                <div class="floating-accent floating-symbol float-sparkle-two" data-depth="0.45"><span>✧</span></div>
+                <div class="floating-accent floating-orb float-orb-one" data-depth="0.2"><span></span></div>
+                <div class="floating-accent floating-gem float-gem-one" data-depth="0.6"><i class="fas fa-gem"></i></div>
+            </div>
     </section>
 
-    <!-- Sección de Filtros -->
-    <section class="filters-section">
-        <div class="container">
-            <h3>Filtrar por:</h3>
-            <div class="filters">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="hombre">Hombre</button>
-                <button class="filter-btn" data-filter="mujer">Mujer</button>
-                <button class="filter-btn" data-filter="unisex">Unisex</button>
-                <button class="filter-btn" data-filter="premium">Premium</button>
-            </div>
-                    
-        <!-- NUEVO BUSCADOR -->
-        <div class="search-container">
-            <div class="search-box">
-                <i class="fas fa-search search-icon"></i>
-                <input type="text" id="search-input" placeholder="Buscar perfume por nombre, marca o descripción..." class="search-input">
-                <button id="clear-search" class="clear-search" style="display: none;">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div id="search-results-count" class="search-results-count"></div>
-        </div>
-            <div class="sort">
-                <label for="sort">Ordenar por:</label>
-                <select id="sort">
-                    <option value="popular">Más populares</option>
-                    <option value="price-asc">Precio: menor a mayor</option>
-                    <option value="price-desc">Precio: mayor a menor</option>
-                    <option value="name">Nombre A-Z</option>
-                </select>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Perfumes -->
-    <section id="perfumes" class="perfumes-section">
-        <div class="container">
-            <h2 class="section-title">Nuestra Colección para importar</h2>
-            <div class="perfumes-grid">
-                <!-- Los productos se cargarán dinámicamente con JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Categorías -->
+    <a class="floating-whatsapp" href="https://wa.me/51931637965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20perfumes" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Escríbenos</span>
+    </a>
+<!--
+    <!-- Sección de Categorías
     <section id="categorias" class="categories-section">
         <div class="container">
             <h2 class="section-title">Categorías</h2>
@@ -154,7 +132,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>  -->
 
     <!-- Sección Nosotros -->
     <section id="nosotros" class="about-section">
@@ -181,14 +159,11 @@
                 <a class="trust-whatsapp" href="https://chat.whatsapp.com/KZ9jgVvydt365ed0Sph0ZP" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Conocer la comunidad</a>
             </div>
             <div class="about-image">
-                <div class="trust-card">
-                    <img src="img/leairlogos.png" alt="Leiar Perfumería" class="trust-logo">
-                    <h3>Compra con respaldo</h3>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i><span><strong>Productos originales</strong><small>Revisamos presentación, lote y condición del producto.</small></span></li>
-                        <li><i class="fas fa-box-open"></i><span><strong>Importación responsable</strong><small>Trabajamos cada consolidado con seguimiento y cuidado.</small></span></li>
-                        <li><i class="fas fa-comments"></i><span><strong>Atención real</strong><small>Resolvemos tus dudas antes y después de comprar.</small></span></li>
-                    </ul>
+                <div class="trust-collage" aria-label="Evidencias reales de Leiar">
+                    <figure class="collage-main"><img src="img/evidencias/consolidado.png" alt="Consolidado real de perfumes Leiar"><figcaption>Consolidados reales</figcaption></figure>
+                    <figure class="collage-top"><img src="img/evidencias/codigo-lote.png" alt="Verificación de códigos y lotes"><figcaption>Originalidad</figcaption></figure>
+                    <figure class="collage-bottom"><img src="img/evidencias/empaque-sellado.png" alt="Preparación y empaque de productos"><figcaption>Importación</figcaption></figure>
+                    <div class="community-seal"><strong>+100</strong><span>personas confían<br>en Leiar</span></div>
                 </div>
             </div>
         </div>
@@ -198,7 +173,7 @@
         <div class="container">
             <div class="proof-heading">
                 <div><span class="section-eyebrow">Transparencia en cada pedido</span><h2 id="proof-title" class="section-title">Así cuidamos la originalidad</h2></div>
-                <p>No queremos que confíes solo en palabras. Te mostramos qué puedes verificar antes de elegir tu perfume. + evidencias en nuestro wsp</p>
+                <p>No queremos que confíes solo en palabras. Te mostramos qué puedes verificar antes de elegir tu perfume y compartimos más evidencias directamente por WhatsApp.</p>
             </div>
             <div class="proof-grid">
                 <article>
@@ -218,6 +193,7 @@
                     <span>04</span><h3>Comunidad real</h3><p>Más de 100 personas forman parte de nuestro espacio de novedades y referencias.</p>
                 </article>
             </div>
+            <div class="proof-statement"><i class="fas fa-shield-heart"></i><span>Perfumes originales, importados y revisados antes de cada entrega.</span><a href="https://wa.me/51931637965?text=Hola%2C%20quiero%20ver%20evidencias%20de%20sus%20productos" target="_blank" rel="noopener">Ver más evidencias <i class="fab fa-whatsapp"></i></a></div>
         </div>
     </section>
 
@@ -230,6 +206,11 @@
                 <div class="membership-box">
                     <div><small>Primera compra</small><strong>S/ 0</strong><span>Sin pago de membresía</span></div>
                     <p>Primero prueba nuestro servicio, recibe tu perfume y comprueba la experiencia. Si desde tu segunda compra deseas continuar con los precios emprendedor, activas el plan por <strong>S/ 50 mensuales</strong>.</p>
+                </div>
+                <div class="plan-timeline" aria-label="Cómo funciona el Plan Emprendedor">
+                    <article><span>01</span><div><strong>Primera compra</strong><p>Accede al precio emprendedor sin pagar membresía.</p></div></article>
+                    <article><span>02</span><div><strong>Comprueba</strong><p>Recibe tu perfume y conoce cómo trabajamos.</p></div></article>
+                    <article><span>03</span><div><strong>Decide continuar</strong><p>Desde tu segunda compra activas el plan por S/ 50 mensuales.</p></div></article>
                 </div>
             </div>
             <div class="price-example">
@@ -249,8 +230,9 @@
                 <article><i class="fas fa-bullhorn"></i><h3>Acompañamiento</h3><p>Recibe orientación para elegir productos con potencial comercial.</p></article>
             </div>
             <div class="plan-cta">
-                <div><h3>Prueba el plan sin pagar membresía</h3><p>Haz tu primera compra, conoce cómo trabajamos y decide después si deseas continuar.</p></div>
-                <a href="https://wa.me/51931637965?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20Plan%20Emprendedor%20Leiar" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quiero conocer el plan</a>
+                <img src="img/khamrah.png" alt="Perfume Khamrah" aria-hidden="true">
+                <div><span>IMPORTA CON NOSOTROS</span><h3>Deja de pagar precio de tienda.</h3><p>Haz tu primera compra, comprueba cómo trabajamos y decide después si deseas continuar.</p></div>
+                <div class="plan-cta-actions"><a href="https://wa.me/51931637965?text=Hola%2C%20quiero%20probar%20mi%20primera%20compra%20del%20Plan%20Emprendedor" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Probar mi primera compra</a><a class="secondary-cta" href="https://wa.me/51931637965?text=Hola%2C%20tengo%20una%20consulta%20sobre%20el%20Plan%20Emprendedor" target="_blank" rel="noopener">Resolver una duda</a></div>
             </div>
         </div>
     </section>
@@ -269,7 +251,8 @@
                 <div class="footer-links">
                     <h3>Enlaces rápidos</h3>
                     <ul>
-                        <li><a href="#perfumes">Perfumes</a></li>
+                        <li><a href="perfumes.html">Perfumes</a></li>
+                        <li><a href="watches.html">Relojes</a></li>
                         <li><a href="#categorias">Categorías</a></li>
                         <li><a href="#nosotros">Sobre nosotros</a></li>
                         <li><a href="#emprendedores">Plan Emprendedor</a></li>
@@ -295,18 +278,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Modal para detalles del producto -->
-    <div class="modal-overlay">
-        <div class="modal">
-            <div class="modal-close">
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="modal-content">
-                <!-- Contenido del modal se cargará dinámicamente -->
-            </div>
-        </div>
-    </div>
 
     <script src="supabase-config.js"></script>
     <script src="script.js"></script>

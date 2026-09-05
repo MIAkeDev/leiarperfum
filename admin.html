@@ -27,12 +27,17 @@
 
         <section id="dashboard-view" class="dashboard" hidden>
             <header class="admin-header">
-                <div><h1>Catálogo de perfumes</h1><p id="session-email"></p></div>
+                <div><h1 id="catalog-title">Catálogo de perfumes</h1><p id="session-email"></p></div>
                 <div class="header-actions">
                     <button id="new-product" type="button">Nuevo perfume</button>
                     <button id="logout" type="button" class="secondary">Cerrar sesión</button>
                 </div>
             </header>
+
+            <div class="catalog-tabs" role="tablist" aria-label="Tipo de catálogo">
+                <button type="button" class="catalog-tab active" data-catalog="products">Perfumes</button>
+                <button type="button" class="catalog-tab" data-catalog="watches">Relojes</button>
+            </div>
 
             <div class="toolbar">
                 <input id="admin-search" type="search" placeholder="Buscar por nombre...">
@@ -68,6 +73,13 @@
                 <label>Insignia<input id="product-badge" maxlength="40" placeholder="Nuevo, Premium..."></label>
                 <label>Popularidad<input id="product-popularity" type="number" min="0" max="100" value="0" required></label>
                 <label>Color<input id="product-color" type="color" value="#ffffff"></label>
+                <label id="style-field" hidden>Estilo
+                    <select id="product-style">
+                        <option value="elegante">Elegante</option><option value="cronografo">Cronógrafo</option>
+                        <option value="diver">Diver</option><option value="automatico">Automático</option>
+                        <option value="smartwatch">Smartwatch</option>
+                    </select>
+                </label>
                 <label>Estado<select id="product-active"><option value="true">Activo</option><option value="false">Archivado</option></select></label>
                 <label class="wide">Descripción corta<textarea id="product-description" rows="2" required></textarea></label>
                 <label class="wide">Detalles<textarea id="product-details" rows="4" required></textarea></label>
