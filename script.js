@@ -22,7 +22,46 @@ document.addEventListener('DOMContentLoaded', async function() {
     setupEventListeners();
     initCarousel(); // Carrusel inicializado correctamente
     initFloatingEffects();
+    initRotatingHeroWord();
 });
+
+function initRotatingHeroWord() {
+    const element = document.querySelector('.rotating-word');
+    if (!element || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const words = ['perfume', 'producto', 'dispositivo'];
+    let wordIndex = 0;
+    let letterIndex = words[0].length;
+    let deleting = true;
+
+    const animate = () => {
+        const word = words[wordIndex];
+
+        if (deleting) {
+            letterIndex--;
+            element.textContent = word.slice(0, letterIndex);
+            if (letterIndex === 0) {
+                deleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                window.setTimeout(animate, 380);
+                return;
+            }
+            window.setTimeout(animate, 75);
+            return;
+        }
+
+        letterIndex++;
+        element.textContent = words[wordIndex].slice(0, letterIndex);
+        if (letterIndex === words[wordIndex].length) {
+            deleting = true;
+            window.setTimeout(animate, 1900);
+            return;
+        }
+        window.setTimeout(animate, 115);
+    };
+
+    window.setTimeout(animate, 2100);
+}
 
 function initFloatingEffects() {
     const hero = document.querySelector('.hero');
